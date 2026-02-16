@@ -7,7 +7,7 @@
 
   <style>
     /* =========================
-       LEO CELIJA - ENGLISH AIRY (Balanced & 1 Page)
+       LEO CELIJA - ENGLISH FINAL (Guaranteed 1 Page)
        ========================= */
 
     :root{ --ink:#111; --muted:#444; --accent:#1f2937; --line:#ddd; --bg:#fff; }
@@ -16,55 +16,52 @@
       margin:0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color:var(--ink);
-      line-height:1.35; /* Better readability */
-      font-size: 9.2pt; /* Readable size */
+      line-height:1.2; /* Tightened for safety */
+      font-size: 9pt; /* Perfect size */
     }
     a{ color:inherit; text-decoration:none; }
-    .page{ max-width: 850px; margin: 20px auto; padding: 0 20px; }
+    .page{ max-width: 850px; margin: 0 auto; padding: 0 15px; }
     
-    /* Clean layout without box/shadow for max space usage */
     .card{ border:none; padding: 0; }
 
-    header{ display:flex; justify-content:space-between; border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 14px; }
-    h1{ margin:0; font-size: 20pt; text-transform: uppercase; letter-spacing: 0.5px; }
-    .title{ margin:2px 0 0 0; font-weight:700; color:var(--muted); font-size: 10.5pt; }
+    header{ display:flex; justify-content:space-between; border-bottom: 2px solid var(--accent); padding-bottom: 5px; margin-bottom: 8px; padding-top: 10px; }
+    h1{ margin:0; font-size: 18pt; text-transform: uppercase; letter-spacing: 0.5px; }
+    .title{ margin:2px 0 0 0; font-weight:700; color:var(--muted); font-size: 10pt; }
     
-    .contact{ font-size: 9pt; color:var(--muted); text-align:right; line-height: 1.4; }
-    .contact a:hover{ text-decoration:underline; }
-
+    .contact{ font-size: 9pt; color:var(--muted); text-align:right; line-height: 1.3; }
+    
     h2{ 
-      margin: 12px 0 6px 0; 
-      font-size: 10.5pt; 
+      margin: 6px 0 3px 0; 
+      font-size: 10pt; 
       text-transform: uppercase; 
       color: var(--accent); 
       border-bottom: 1px solid var(--line); 
-      padding-bottom: 2px;
-      letter-spacing: 0.5px;
+      padding-bottom: 1px;
     }
     
-    p{ margin: 0 0 6px 0; }
+    p{ margin: 0 0 3px 0; }
     
-    .btn{ display:none; } /* Hide button to look cleaner */
+    .btn{ display:none; } 
     
-    .job{ margin-bottom: 10px; } /* More air between jobs */
-    .job-head{ display:flex; justify-content:space-between; font-weight: 700; font-size: 9.5pt; margin-bottom: 2px; }
-    .job-company{ font-weight: 700; color: var(--accent); font-size: 9pt; display:block; margin-bottom: 3px; }
+    .job{ margin-bottom: 6px; } 
+    .job-head{ display:flex; justify-content:space-between; font-weight: 700; font-size: 9.5pt; margin-bottom: 1px; }
+    .job-company{ font-weight: 700; color: var(--accent); font-size: 9pt; display:block; margin-bottom: 1px; }
     
     ul{ margin: 0; padding-left: 15px; }
-    li{ margin-bottom: 2px; } /* Air between bullets */
+    li{ margin-bottom: 1px; } 
 
-    .grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 4px; }
-    .subhead{ font-weight: 700; font-size: 9pt; margin-bottom: 3px; text-transform:uppercase; color:var(--muted); }
+    .grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 2px; }
+    .subhead{ font-weight: 700; font-size: 9pt; margin-bottom: 1px; text-transform:uppercase; color:var(--muted); }
 
-    /* Print settings */
+    /* Print settings - Force fit */
     @media print{
-      @page { margin: 10mm 12mm; } /* Optimized margins */
+      @page { margin: 8mm 10mm; size: A4; } 
       body{ background:#fff; }
       .page{ margin: 0; padding: 0; max-width: none; }
       .btn{ display:none; }
-      header{ display:block; }
-      .contact{ text-align:left; margin-top:8px; }
-      .grid{ grid-template-columns: 1fr; }
+      header{ display:block; padding-top: 0; }
+      .contact{ text-align:left; margin-top:4px; }
+      .grid{ grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
