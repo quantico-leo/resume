@@ -7,7 +7,7 @@
 
   <style>
     /* =========================
-       LEO CELIJA - ENGLISH AIRY (Smart Layout)
+       LEO CELIJA - FINAL ENGLISH (Working Links & Perfect Layout)
        ========================= */
 
     :root{ --ink:#111; --muted:#444; --accent:#1f2937; --line:#ddd; --bg:#fff; }
@@ -16,10 +16,12 @@
       margin:0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color:var(--ink);
-      line-height:1.35; /* SKÖNT LÄSAVSTÅND */
+      line-height:1.35;
       font-size: 9.2pt; 
     }
-    a{ color:inherit; text-decoration:none; }
+    a{ color:inherit; text-decoration:none; cursor: pointer; }
+    a:hover{ text-decoration:underline; }
+    
     .page{ max-width: 850px; margin: 0 auto; padding: 0 15px; }
     
     .card{ border:none; padding: 0; }
@@ -44,7 +46,6 @@
     
     .btn{ display:none; } 
     
-    /* HÄR ÄR MAGIN: Mer luft mellan jobben */
     .job{ margin-bottom: 14px; } 
     .job-head{ display:flex; justify-content:space-between; font-weight: 700; font-size: 10pt; margin-bottom: 2px; }
     .job-company{ font-weight: 700; color: var(--accent); font-size: 9pt; display:block; margin-bottom: 3px; }
@@ -52,7 +53,6 @@
     ul{ margin: 0; padding-left: 15px; }
     li{ margin-bottom: 2px; } 
 
-    /* Kompaktare botten för att spara plats */
     .compact-section{ margin-bottom: 5px; }
     .compact-row{ display:flex; gap: 20px; margin-bottom: 4px; }
     .compact-label{ font-weight: 700; min-width: 80px; color:var(--muted); font-size: 9pt; }
@@ -77,10 +77,10 @@
         </div>
         <div class="contact">
           Gothenburg, Sweden<br>
-          +46 73 784 60 11<br>
-          leo.celija@avertum.se<br>
-          linkedin.com/in/leocelija<br>
-          avertum.se
+          <a href="tel:+46737846011">+46 73 784 60 11</a><br>
+          <a href="mailto:leo.celija@avertum.se">leo.celija@avertum.se</a><br>
+          <a href="https://www.linkedin.com/in/leocelija" target="_blank">linkedin.com/in/leocelija</a><br>
+          <a href="https://www.avertum.se" target="_blank">avertum.se</a>
         </div>
       </header>
 
