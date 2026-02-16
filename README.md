@@ -1,83 +1,74 @@
 # LEO CELIJA
-### Senior Affärsutvecklare & Säljare | Tech & Risk Specialist
-📍 **Göteborg** | 📱 **073-784 60 11** | ✉️ **leo.celija@gmail.com**
-🔗 [LinkedIn Profil](https://linkedin.com/in/leocelija) | 🌐 [Avertum Group](https://avertum.se)
+**Senior Commercial Executive | Tech, Risk & Compliance**
+
+Göteborg | +46 73-784 60 11 | leo.celija@gmail.com
+[LinkedIn](https://linkedin.com/in/leocelija) | [Avertum Group](https://avertum.se)
 
 ---
 
-> 🇸🇪 **Svenska** | 🇬🇧 [English Version](CV_ENGLISH.md)
+### SAMMANFATTNING
+Senior affärsutvecklare med över 15 års erfarenhet av komplex B2B-försäljning, strategisk kundbearbetning och riskhantering. Kombinerar en bakgrund från högpresterande finansiella miljöer (**Fisher Investments**) med aktuell specialistkompetens inom **Cybersäkerhet och EU-reglering (NIS2/DORA)**.
+
+Dokumenterad förmåga att driva intäkter, öppna dörrar på C-level och överbrygga gapet mellan teknisk komplexitet och affärsnytta. Söker uppdrag där kommersiellt driv och regulatorisk förståelse är avgörande.
 
 ---
 
-## 🚀 PROFIL
-**Senior Affärsutvecklare och Säljare med 15+ års erfarenhet.**
+### ARBETSLIVSERFARENHET
 
-Jag erbjuder en unik profil som kombinerar dokumenterade säljresultat från högpresterande internationella miljöer (**Fisher Investments, Skandia**) med djupgående expertis inom **IT-säkerhet och regelefterlevnad (NIS2/DORA)**.
+**AVERTUM GROUP AB | Grundare & Senior Konsult**
+*Göteborg | 2022 – Pågående*
+*Strategisk rådgivning inom säkerhet, riskhantering och affärsjuridik.*
 
-Min styrka ligger i att överbrygga gapet mellan teknisk komplexitet och kommersiell affärsnytta. Jag är specialiserad på att öppna dörrar till ledningsgrupper, bygga förtroende och stänga affärer där säkerhet, riskhantering och juridik är avgörande faktorer.
+* **Resultat:** Genererade 1,8 MSEK i omsättning första 7 månaderna genom strategisk nykundsbearbetning.
+* **Uppdrag:** Leder säljprocesser och leverans av säkerhetstjänster mot företagsledningar.
+* **Expertis:** Översätter tekniska hotbilder och lagkrav (GDPR/NIS2) till konkreta affärsbeslut för kunder.
 
-* **Tillgänglig för:** Interimsuppdrag (Konsult) eller fasta roller som Head of Sales/KAM.
-* **Fokus:** B2B, Tech, Finans, Cyber Security.
+**GÖTEBORG ENERGI | Key Account Manager (Företag)**
+*Göteborg | 2018 – 2020*
+*Ansvarig för bolagets största strategiska företagskunder inom industri och infrastruktur.*
 
----
+* **Prestation:** Säkrade och omförhandlade portföljens nyckelavtal med fokus på långsiktig lönsamhet.
+* **Strategi:** Drev komplexa affärer som krävde samordning mellan juridik, teknik och finans.
+* **Relationer:** Agerade strategisk partner till kundernas ledningsgrupper i energifrågor.
 
-## 💼 ARBETSLIVSERFARENHET
+**UNITED CASH BACK | Nordic Sales Executive**
+*Norden | 2016 – 2018*
+*B2B-försäljning av SaaS/Lojalitetslösningar.*
 
-### **AVERTUM GROUP AB | Senior Konsult & Affärsutvecklare**
-*Juni 2022 – Pågående (Eget bolag)*
-*Konsultverksamhet inriktad på riskhantering, förhandling och incidentrespons.*
+* **Roll:** Renodlad "Hunter"-roll med ansvar för hela säljcykeln från prospektering till avslut.
+* **KPI:** Överträffade konsekvent säljmålen och etablerade bolaget på nya marknadssegment i Norden.
 
-* **Säljresultat:** Genererade **1,8 MSEK** i intäkter på 7 månader genom uppsökande B2B-försäljning och strategiska partnerskap.
-* **Roll:** Driver hela säljcykeln för säkerhets- och utredningstjänster mot företagsledare (C-level).
-* **Tech & Risk:** Rådgivning kring incidenthantering och regelefterlevnad (Compliance). Översätter tekniska hotbilder till affärsrisker som styrelser kan agera på.
+**FISHER INVESTMENTS EUROPE | Senior Investment Sales Executive**
+*London/Remote | 2014 – 2016*
+*Global kapitalförvaltare känd för aggressiv tillväxt och säljkultur.*
 
-### **GÖTEBORG ENERGI | Corporate Manager & Key Account**
-*2018 – 2020*
-*Strategisk försäljning mot storföretag inom energi och infrastruktur.*
+* **Top Performer:** Rankad i toppen av säljteamet. Bearbetade högförmögna individer (HNWI) i Skandinavien.
+* **Metodik:** Expert på "Consultative Selling" och att stänga stora, immateriella affärer via telefon/digitala kanaler.
+* **Miljö:** Arbetade under strikta regulatoriska krav (FCA/Finansinspektionen) med höga aktivitetsmål.
 
-* Ansvarade för en strategisk kundportfölj med fokus på lönsamhet, merförsäljning och kundnöjdhet (NKI).
-* Förhandlade komplexa, långsiktiga avtal i en bransch under hårt regulatoriskt tryck.
-* Arbetade tvärfunktionellt med juridik och teknik för att paketera kundanpassade lösningar.
+**SKANDIA | Finansiell Rådgivare**
+*Göteborg | 2010 – 2014*
+*Försäljning av pension och försäkring.*
 
-### **UNITED CASH BACK | Nordic Sales Executive**
-*2016 – 2018*
-*B2B-försäljning mot SME-segmentet i Norden.*
-
-* **Roll:** Renodlad "Hunter" med ansvar för nykundsbearbetning (New Business) och implementering av lojalitetslösningar.
-* **Resultat:** Byggde egen pipeline från noll och överträffade konsekvent aggressiva månadsbudgetar.
-
-### **FISHER INVESTMENTS EUROPE | Senior Investment Sales Executive**
-*2014 – 2016 (London/Remote)*
-*Toppresterande säljare på en av världens ledande kapitalförvaltare.*
-
-* **Prestation:** Rankad **Top Performer** i teamet. Bearbetade High Net Worth Individuals (HNWI) i Norden.
-* **Kompetens:** Specialiserad på att bygga förtroende och stänga stora, immateriella affärer (Kapitalförvaltning) enbart via telefon.
-* **Arbetssätt:** Hanterade extremt höga aktivitetskrav (KPI:er) och strikt regelefterlevnad i säljprocessen.
-
-### **SKANDIA | Finansiell Rådgivare & Säljare**
-*2010 – 2014*
-*Rådgivande försäljning mot privat- och företagsmarknaden.*
-
-* Behovsanalys och försäljning av komplexa pensions- och försäkringslösningar.
-* Byggde och förvaltade en egen kundstock med fokus på långsiktiga relationer och merförsäljning (Cross-selling).
+* Byggde upp och förvaltade egen kundstock (privat/företag) med fokus på korsförsäljning och kundvård.
 
 ---
 
-## 🎓 UTBILDNING & CERTIFIERINGAR
+### UTBILDNING & CERTIFIERINGAR
 
-### **Certifierad Cybersäkerhet & InfoSec**
-*(Pågående, klart 2026)*
-* **Fokus:** Governance, Risk & Compliance (GRC), NIS2, DORA, Incident Management.
-* *Relevant kompetens för roller som säljer säkerhetslösningar eller regelefterlevnad.*
+**Governance, Risk & Compliance (GRC)**
+*Självstudier/Certifiering (Pågående)*
+Fokus: NIS2, DORA, AI Act, Informationssäkerhet.
 
-### **Fil. Mag. Statsvetenskap (Nationalekonomi)**
+**Fil. Mag. Statsvetenskap (Nationalekonomi)**
 *Göteborgs Universitet*
+Inriktning mot internationella relationer och makroekonomi.
 
 ---
 
-## 🛠️ VERKTYG & KOMPETENS
-* **Språk:** Svenska (Modersmål), Engelska (Flytande, förhandlingsnivå).
-* **CRM & Tech:** Salesforce, HubSpot, OSINT-verktyg, AI-implementering för affärsprocesser.
-* **Säljmetodik:** Consultative Selling, SPIN, Challenger Sale.
+### KOMPETENS
 
----
+* **Säljmetodik:** SPIN, Challenger Sale, Strategic Account Management.
+* **Regelverk:** NIS2, DORA, GDPR, Corporate Governance.
+* **Språk:** Svenska (Modersmål), Engelska (Flytande, affärsnivå).
+* **Tech:** CRM (Salesforce, HubSpot), OSINT, AI-verktyg för affärsanalys.
