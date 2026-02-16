@@ -7,7 +7,7 @@
 
   <style>
     /* =========================
-       LEO CELIJA - ENGLISH VERSION
+       LEO CELIJA - FINAL ENGLISH (LINKS FIXED)
        ========================= */
     :root {
       --ink: #000;
@@ -68,8 +68,9 @@
       line-height: 1.4;
     }
     .contact a { color: #000; text-decoration: none; font-weight: 600; }
+    .contact a:hover { text-decoration: underline; color: var(--accent); }
 
-    /* Actions */
+    /* Actions (Buttons) */
     .actions {
       margin-top: 10px;
       display: flex;
@@ -84,9 +85,12 @@
       cursor: pointer;
       border: none;
       color: white;
+      display: inline-flex;
+      align-items: center;
     }
     .btn-pdf { background: #2c3e50; }
     .btn-wa { background: #25D366; }
+    .btn:hover { opacity: 0.9; }
 
     /* Headings */
     h2 {
@@ -133,12 +137,15 @@
     .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .grid h3 { font-size: 10pt; margin: 0 0 4px 0; text-transform: uppercase; color: #444; }
 
-    /* PRINT */
+    /* PRINT RULES */
     @media print {
       @page { margin: 0; }
       body { margin: 0; padding: 0; -webkit-print-color-adjust: exact; }
       .page { width: 100%; max-width: none; margin: 0; padding: 15mm; }
+      
+      /* Hide buttons on paper */
       .actions { display: none !important; }
+      
       a { text-decoration: none; color: #000; }
       a[href]:after { content: none !important; }
       .job, h2, li { page-break-inside: avoid; }
@@ -155,7 +162,7 @@
       
       <div class="actions">
         <button class="btn btn-pdf" onclick="window.print()">🖨️ Save as PDF</button>
-        <a href="https://wa.me/46737846011" class="btn btn-wa">💬 WhatsApp</a>
+        <a href="https://wa.me/46737846011" class="btn btn-wa">💬 Chat on WhatsApp</a>
       </div>
     </div>
     
@@ -163,7 +170,7 @@
       Gothenburg, Sweden<br>
       <a href="mailto:leo.celija@avertum.se">leo.celija@avertum.se</a><br>
       <a href="tel:0737846011">+46 73 784 60 11</a><br>
-      <a href="#">Avertum Group AB</a>
+      <a href="https://www.avertum.se" target="_blank">Avertum Group AB</a>
     </div>
   </header>
 
