@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CV – Leo Celija</title>
-
-  <style>
+  <title>Leo Celija</title> <style>
     /* =========================
-       COMPACT CV STYLE (10/10)
+       LEO CELIJA - FINAL COMPACT
        ========================= */
-
     :root {
-      --ink: #111;
-      --accent: #2c3e50; /* Proffsig mörkblå */
+      --ink: #000;
+      --accent: #2c3e50;
       --bg: #fff;
-      --border: #ddd;
+      --border: #ccc;
     }
+
+    /* Återställ allt */
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -23,167 +23,128 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--ink);
       background: var(--bg);
-      line-height: 1.4; /* Tajtare radavstånd */
-      font-size: 11pt;  /* Optimal lässtorlek */
+      line-height: 1.3; /* Tajt för att spara plats */
+      font-size: 10.5pt; /* Perfekt läsbarhet men kompakt */
     }
 
-    /* A4 Container */
+    /* Pappersarket */
     .page {
       max-width: 210mm;
       margin: 0 auto;
-      padding: 15mm 20mm; /* Säkra marginaler */
+      padding: 12mm 15mm; /* Optimerade marginaler */
       background: #fff;
     }
 
     /* Header */
     header {
       border-bottom: 2px solid var(--accent);
-      padding-bottom: 15px;
-      margin-bottom: 20px;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
     }
 
-    h1 {
-      font-size: 24pt;
-      margin: 0 0 5px 0;
+    .header-left h1 {
+      font-size: 22pt;
+      margin: 0;
       text-transform: uppercase;
-      color: var(--ink);
       letter-spacing: 1px;
+      color: #000;
     }
 
-    .role {
-      font-size: 12pt;
-      color: #555;
+    .header-left .role {
+      font-size: 11pt;
+      color: #444;
       font-weight: 600;
-      margin: 0 0 10px 0;
+      margin-top: 2px;
     }
 
     .contact {
-      font-size: 10pt;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
+      text-align: right;
+      font-size: 9pt;
+      line-height: 1.4;
     }
-    
-    .contact a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .contact a:hover { text-decoration: underline; }
+    .contact a { color: #000; text-decoration: none; font-weight: 600; }
 
-    /* Print-knapp (syns ej på utskrift) */
-    .btn-print {
-      display: inline-block;
+    /* Knappar (Syns bara på skärm) */
+    .actions {
       margin-top: 10px;
-      padding: 8px 15px;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      padding: 6px 12px;
       border-radius: 4px;
+      text-decoration: none;
       font-size: 12px;
       font-weight: bold;
       cursor: pointer;
       border: none;
+      color: white;
     }
+    .btn-pdf { background: #2c3e50; }
+    .btn-wa { background: #25D366; }
 
-    /* Sektioner */
-    section { margin-bottom: 20px; }
-
+    /* Rubriker */
     h2 {
-      font-size: 14pt;
+      font-size: 12pt;
       text-transform: uppercase;
       color: var(--accent);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 3px;
-      margin: 0 0 12px 0;
+      border-bottom: 1px solid #ddd;
+      margin: 15px 0 8px 0;
+      padding-bottom: 2px;
     }
 
-    p { margin: 0 0 10px 0; }
+    p { margin: 0 0 8px 0; }
 
-    /* Kompetens-chips */
+    /* Kompetenslista (Chips) */
     .chips {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+      padding: 0; margin: 0; list-style: none;
+      display: flex; flex-wrap: wrap; gap: 6px;
     }
     .chip {
-      background: #f4f4f4;
-      border: 1px solid #ddd;
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-size: 10pt;
+      background: #f0f0f0;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-size: 9pt;
       font-weight: 600;
+      border: 1px solid #ddd;
     }
 
-    /* Jobb-listan */
-    .item { margin-bottom: 15px; }
-
-    .item-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 2px;
+    /* Jobb */
+    .job { margin-bottom: 12px; }
+    .job-head {
+      display: flex; justify-content: space-between;
+      font-weight: bold; font-size: 10.5pt;
     }
-
-    .item-title { font-weight: bold; font-size: 11pt; }
-    .item-date { font-style: italic; color: #666; font-size: 10pt; }
-    
-    .item-company {
-      font-weight: bold;
-      color: var(--accent);
-      font-size: 10pt;
-      margin-bottom: 5px;
-      display: block;
+    .job-company {
+      color: var(--accent); font-weight: bold; font-size: 10pt;
+      margin-bottom: 2px; display: block;
     }
-
     ul.bullets {
-      margin: 0;
-      padding-left: 18px;
+      margin: 0; padding-left: 16px; margin-top: 2px;
     }
-    ul.bullets li { margin-bottom: 4px; }
+    li { margin-bottom: 2px; }
 
-    /* Grid för Utbildning/Verktyg */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    
-    .box h3 {
-      font-size: 11pt;
-      margin: 0 0 5px 0;
-      color: var(--ink);
-      text-transform: uppercase;
-    }
+    /* Grid för utbildning */
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .grid h3 { font-size: 10pt; margin: 0 0 4px 0; text-transform: uppercase; color: #444; }
 
     /* =========================
-       PRINT SPECIFICS (PDF)
+       PRINT RULES (Här sker magin)
        ========================= */
     @media print {
-      body { background: #fff; font-size: 10pt; }
-      .page { width: 100%; max-width: none; padding: 0; margin: 0; }
-      .btn-print { display: none; }
+      @page { margin: 0; } /* Tvingar bort webbläsarens marginaler */
+      body { margin: 0; padding: 0; -webkit-print-color-adjust: exact; }
+      .page { width: 100%; max-width: none; margin: 0; padding: 15mm; }
+      .actions { display: none !important; } /* Döljer knappar */
+      a { text-decoration: none; color: #000; }
+      /* Inga fula länkar efter texten */
+      a[href]:after { content: none !important; }
       
-      /* Länkar ska vara svarta men klickbara */
-      a { color: #000; text-decoration: none; }
-      a[href^="http"]:after { content: ""; } /* Ingen URL-text efter länk */
-
-      /* Undvik sidbrytning mitt i ett jobb */
-      .item, h2, h3 { page-break-inside: avoid; }
-      
-      /* Chips blir enkel text */
-      .chips { display: block; }
-      .chip { 
-        display: inline; 
-        border: none; 
-        background: none; 
-        padding: 0; 
-        margin: 0; 
-      }
-      .chip:after { content: " • "; color: #999; }
-      .chip:last-child:after { content: ""; }
+      /* Förhindra sidbrytning i block */
+      .job, h2, li { page-break-inside: avoid; }
     }
   </style>
 </head>
@@ -191,25 +152,29 @@
 
 <div class="page">
   <header>
-    <h1>Leo Celija</h1>
-    <div class="role">Senior Affärsutvecklare | Risk & Security (NIS2/DORA)</div>
+    <div class="header-left">
+      <h1>Leo Celija</h1>
+      <div class="role">Senior Affärsutvecklare | Risk & Security (NIS2)</div>
+      
+      <div class="actions">
+        <button class="btn btn-pdf" onclick="window.print()">🖨️ Spara PDF</button>
+        <a href="https://wa.me/46737846011" class="btn btn-wa">💬 WhatsApp</a>
+      </div>
+    </div>
     
     <div class="contact">
-      <span>Göteborg, Sverige</span> |
-      <a href="mailto:leo.celija@avertum.se">leo.celija@avertum.se</a> |
-      <a href="tel:0737846011">073-784 60 11</a> |
+      Göteborg, Sverige<br>
+      <a href="mailto:leo.celija@avertum.se">leo.celija@avertum.se</a><br>
+      <a href="tel:0737846011">073-784 60 11</a><br>
       <a href="#">Avertum Group AB</a>
     </div>
-
-    <button class="btn-print" onclick="window.print()">🖨️ Spara som PDF</button>
   </header>
 
   <section>
     <h2>Profil</h2>
     <p>
       Senior affärsutvecklare och konsult med spetskompetens i gränslandet mellan komplex B2B-försäljning och regulatorisk risk (NIS2/DORA). 
-      Bakgrund från både internationell finans och svensk industri, med dokumenterad förmåga att driva tillväxt och bygga strategiska kundrelationer på C-level. 
-      Kombinerar operativt säljdriv med analytisk höjd för att skapa konkret affärsnytta i säkerhetskritiska miljöer.
+      Bakgrund från både internationell finans och svensk industri. Dokumenterad förmåga att driva tillväxt och bygga strategiska kundrelationer på C-level.
     </p>
     <ul class="chips">
       <li class="chip">Strategisk B2B-försäljning</li>
@@ -217,59 +182,57 @@
       <li class="chip">Risk & Compliance (NIS2)</li>
       <li class="chip">GAP-analys</li>
       <li class="chip">Supply Chain Security</li>
-      <li class="chip">Salesforce / CRM</li>
     </ul>
   </section>
 
   <section>
     <h2>Arbetslivserfarenhet</h2>
 
-    <div class="item">
-      <div class="item-header">
-        <span class="item-title">Grundare & Senior Konsult (Risk & Commercial)</span>
-        <span class="item-date">2022 – Pågående</span>
+    <div class="job">
+      <div class="job-head">
+        <span>Grundare & Senior Konsult</span>
+        <span>2022 – Pågående</span>
       </div>
-      <span class="item-company">AVERTUM GROUP AB | Göteborg</span>
+      <span class="job-company">AVERTUM GROUP AB</span>
       <ul class="bullets">
-        <li><strong>Uppdragsleverans:</strong> Leder strategiska projekt inom säkerhetsskydd och affärsrisk. Översätter regulatoriska krav (NIS2/DORA) till konkreta handlingsplaner för företagsledningar.</li>
-        <li><strong>Key Achievement (Sälj):</strong> Genererade 1,8 MSEK i omsättning första 7 månaderna genom strukturerad bearbetning av nya marknadssegment inom industri och infrastruktur.</li>
-        <li><strong>Case Study (Advisory):</strong> Genomförde GAP-analys och riskbedömning för medelstort industribolag, vilket resulterade i en ny implementeringsplan för leverantörssäkerhet (Supply Chain Risk).</li>
-        <li><strong>Metodik:</strong> Tillämpar konsultativ försäljning för att säkra långsiktiga ramavtal och strategiska partnerskap.</li>
+        <li><strong>Uppdragsleverans:</strong> Leder strategiska projekt inom säkerhetsskydd och affärsrisk. Översätter regulatoriska krav (NIS2/DORA) till konkreta handlingsplaner.</li>
+        <li><strong>Key Achievement (Sälj):</strong> Genererade 1,8 MSEK i omsättning första 7 månaderna genom bearbetning av nya marknadssegment inom industri.</li>
+        <li><strong>Case Study:</strong> Genomförde GAP-analys för medelstort industribolag, vilket resulterade i ny implementeringsplan för leverantörssäkerhet.</li>
       </ul>
     </div>
 
-    <div class="item">
-      <div class="item-header">
-        <span class="item-title">Key Account Manager (KAM)</span>
-        <span class="item-date">2022 – 2022</span>
+    <div class="job">
+      <div class="job-head">
+        <span>Key Account Manager (KAM)</span>
+        <span>2022 – 2022</span>
       </div>
-      <span class="item-company">GÖTEBORG ENERGI | Göteborg</span>
+      <span class="job-company">GÖTEBORG ENERGI</span>
       <ul class="bullets">
         <li>Ansvarig för portföljförvaltning och merförsäljning mot strategiska nyckelkunder (Fastighet & Industri).</li>
-        <li>Ledde komplexa förhandlingar gällande energilösningar och infrastrukturprojekt med fokus på lönsamhet.</li>
+        <li>Ledde komplexa förhandlingar gällande energilösningar och infrastrukturprojekt.</li>
         <li>Utvecklade kundplaner och agerade rådgivare i energifrågor mot beslutsfattare.</li>
       </ul>
     </div>
 
-    <div class="item">
-      <div class="item-header">
-        <span class="item-title">Investment Consultant / Account Executive</span>
-        <span class="item-date">2021 – 2022</span>
+    <div class="job">
+      <div class="job-head">
+        <span>Investment Consultant</span>
+        <span>2021 – 2022</span>
       </div>
-      <span class="item-company">FISHER INVESTMENTS | London</span>
+      <span class="job-company">FISHER INVESTMENTS | London</span>
       <ul class="bullets">
-        <li><strong>Top Performer:</strong> Rankad i toppskiktet bland säljare internationellt. Specialiserad på High Net Worth Individuals (HNWI).</li>
-        <li>Hanterade hela säljcykeln från prospektering till stängning i en högpresterande och strikt reglerad finansiell miljö.</li>
-        <li>Utvecklade djup förståelse för finansiella instrument och riskhantering i dialog med kapitalstarka investerare.</li>
+        <li><strong>Top Performer:</strong> Rankad i toppskiktet bland säljare internationellt. Fokus på HNWI.</li>
+        <li>Hanterade hela säljcykeln från prospektering till stängning i strikt reglerad miljö.</li>
+        <li>Djup förståelse för finansiella instrument och riskhantering.</li>
       </ul>
     </div>
     
-    <div class="item">
-      <div class="item-header">
-        <span class="item-title">Rådgivare / Säljare</span>
-        <span class="item-date">2017 – 2020</span>
+    <div class="job">
+      <div class="job-head">
+        <span>Rådgivare / Säljare</span>
+        <span>2017 – 2020</span>
       </div>
-      <span class="item-company">SKANDIA | Göteborg</span>
+      <span class="job-company">SKANDIA</span>
       <ul class="bullets">
         <li>Rådgivning inom försäkringslösningar och sparande mot privatmarknaden.</li>
         <li>Fokus på behovsanalys och att bygga förtroendeingivande relationer.</li>
@@ -278,39 +241,19 @@
   </section>
 
   <section>
-    <h2>Utbildning & Certifieringar</h2>
-    <div class="grid-2">
-      <div class="box">
+    <div class="grid">
+      <div>
         <h3>Utbildning</h3>
         <ul class="bullets">
-          <li><strong>Fil. Magister i Statsvetenskap (MSc)</strong><br>Göteborgs Universitet | 2016 – 2020</li>
+          <li><strong>Fil. Magister i Statsvetenskap</strong><br>Göteborgs Universitet (2016–2020)</li>
+          <li><strong>Certifierad IT-Säkerhetsspecialist</strong><br>IT-Högskolan (Examen 2026)</li>
         </ul>
       </div>
-      <div class="box">
-        <h3>Certifieringar</h3>
+      <div>
+        <h3>Verktyg & Språk</h3>
         <ul class="bullets">
-          <li><strong>Certifierad IT-Säkerhetsspecialist</strong><br>IT-Högskolan | Examen: Juni 2026<br><small>Inriktning: GRC, NIS2/DORA</small></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Verktyg & Språk</h2>
-    <div class="grid-2">
-      <div class="box">
-        <h3>Verktyg</h3>
-        <ul class="bullets">
-          <li>Salesforce / CRM</li>
-          <li>Microsoft 365</li>
-          <li>OSINT-verktyg</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h3>Språk</h3>
-        <ul class="bullets">
-          <li>Svenska (Modersmål)</li>
-          <li>Engelska (Flytande)</li>
+          <li>Salesforce / CRM, OSINT-verktyg</li>
+          <li>Svenska (Modersmål), Engelska (Flytande)</li>
         </ul>
       </div>
     </div>
