@@ -7,309 +7,152 @@
 
   <style>
     /* =========================
-       LEO CELIJA - ENGLISH FINAL (Nuclear Option - 100% 1 Page)
+       LEO CELIJA - FINAL 1 PAGE (Compact)
        ========================= */
-
-    :root{
-      --ink:#111;
-      --muted:#444;
-      --accent:#1f2937;
-      --line:#d6d6d6;
-      --bg:#f6f7f9;
-      --card:#fff;
-    }
-
+    :root{ --ink:#000; --muted:#444; --accent:#222; --line:#ccc; }
     *{ box-sizing:border-box; }
-    html, body{ height:100%; }
     body{
       margin:0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color:var(--ink);
-      background:var(--bg);
-      line-height:1.2; /* Tight line height */
-      font-size: 9.2pt; /* Adjusted to fit everything */
+      line-height:1.25;
+      font-size: 9pt; /* Smaller text to ensure 1 page */
     }
-
     a{ color:inherit; text-decoration:none; }
-    a:hover{ text-decoration:underline; }
+    .page{ max-width: 800px; margin: 15px auto; padding: 0 15px; }
+    .card{ border:1px solid #eee; border-radius: 8px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 
-    .page{
-      max-width: 900px;
-      margin: 10px auto;
-      padding: 0 14px;
-    }
+    header{ display:flex; justify-content:space-between; border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 10px; }
+    h1{ margin:0; font-size: 18pt; text-transform: uppercase; }
+    .title{ margin:0; font-weight:700; color:var(--muted); font-size: 10pt; }
+    .contact{ font-size: 8.5pt; color:var(--muted); text-align:right; line-height: 1.3; }
+    
+    h2{ margin: 8px 0 4px 0; font-size: 10pt; text-transform: uppercase; color: var(--accent); border-bottom: 1px solid var(--line); }
+    p{ margin: 0 0 4px 0; }
+    
+    .btn{ display:inline-block; border:1px solid #ccc; padding: 4px 8px; border-radius:4px; margin-top:5px; font-size:9pt; cursor:pointer; }
+    
+    .job{ margin-bottom: 6px; }
+    .job-head{ display:flex; justify-content:space-between; font-weight: 700; font-size: 9.5pt; }
+    .job-company{ font-weight: 700; color: var(--accent); font-size: 9pt; display:block; margin-bottom: 2px;}
+    
+    ul{ margin: 0; padding-left: 14px; }
+    li{ margin-bottom: 1px; }
 
-    .card{
-      background:var(--card);
-      border:1px solid rgba(0,0,0,.08);
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.06);
-      padding: 16px 22px; /* Tighter padding */
-    }
+    .grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .subhead{ font-weight: 700; font-size: 9pt; margin-bottom: 2px; text-transform:uppercase; color:var(--muted); }
 
-    header{
-      display:flex;
-      justify-content:space-between;
-      gap: 18px;
-      padding-bottom: 6px;
-      border-bottom: 2px solid var(--accent);
-      margin-bottom: 8px;
-    }
-
-    .h-left{ flex: 1 1 auto; min-width: 260px; }
-    .h-right{ flex: 0 0 280px; text-align:right; }
-
-    h1{
-      margin:0 0 2px 0;
-      font-size: 18pt;
-      letter-spacing: .8px;
-      text-transform: uppercase;
-    }
-
-    .title{
-      margin:0;
-      font-weight:700;
-      color:var(--muted);
-      font-size: 10pt;
-    }
-
-    .contact{
-      margin:0;
-      font-size: 8.5pt;
-      color:var(--muted);
-      line-height: 1.35;
-    }
-
-    .actions{
-      margin-top: 6px;
-      display:flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .btn{
-      border:1px solid rgba(0,0,0,.18);
-      background:#fff;
-      border-radius: 8px;
-      padding: 4px 8px;
-      font-weight: 700;
-      cursor:pointer;
-      font-size: 9pt;
-    }
-
-    main{ margin-top: 6px; }
-
-    h2{
-      margin: 6px 0 3px 0;
-      font-size: 10pt;
-      text-transform: uppercase;
-      letter-spacing: .4px;
-      color: var(--accent);
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 1px;
-    }
-
-    p{ margin: 0 0 3px 0; }
-
-    .skills{
-      margin: 0;
-      padding-left: 16px;
-    }
-    .skills li{ margin: 1px 0; }
-
-    .job{
-      margin: 0 0 5px 0; /* Minimal spacing between jobs */
-      break-inside: avoid;
-      page-break-inside: avoid;
-    }
-
-    .job-head{
-      display:flex;
-      justify-content:space-between;
-      gap: 10px;
-      font-weight: 800;
-      margin-bottom: 1px;
-    }
-    .job-company{
-      display:block;
-      font-weight: 800;
-      color: var(--accent);
-      margin-bottom: 1px;
-      font-size: 9.2pt;
-    }
-    ul.bullets{
-      margin: 0;
-      padding-left: 16px;
-    }
-    ul.bullets li{ margin: 1px 0; }
-
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4px 18px;
-    }
-    .subhead{
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing:.3px;
-      color: var(--muted);
-      font-size: 9pt;
-      margin: 0 0 1px 0;
-    }
-
-    /* =========================
-       PRINT (PDF): Aggressive A4 Optimization
-       ========================= */
     @media print{
-      @page{ margin: 8mm; } /* Smallest safe margins */
-      body{ background:#fff; color:#000; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body{ background:#fff; }
       .page{ margin: 0; padding: 0; max-width: none; }
-      .card{ border:none; box-shadow:none; border-radius:0; padding: 0; }
-      .actions{ display:none !important; }
+      .card{ border:none; box-shadow:none; padding: 0; }
+      .btn{ display:none; }
       header{ display:block; }
-      .h-right{ text-align:left; margin-top: 4px; }
-      a{ text-decoration:none; }
-      a[href]:after{ content: none !important; }
-
+      .contact{ text-align:left; margin-top:5px; }
       .grid{ grid-template-columns: 1fr; }
+      @page { margin: 10mm; }
     }
   </style>
 </head>
-
 <body>
   <div class="page">
-    <article class="card" aria-label="CV">
+    <div class="card">
       <header>
-        <div class="h-left">
+        <div>
           <h1>Leo Celija</h1>
           <p class="title">Senior Business Developer | Cyber &amp; Compliance (GRC)</p>
-
-          <div class="actions" aria-label="Actions">
-            <button class="btn" type="button" onclick="window.print()">🖨️ Save as PDF</button>
-             <a href="https://wa.me/46737846011" class="btn">💬 Chat on WhatsApp</a>
-          </div>
+          <button class="btn" onclick="window.print()">🖨️ Save as PDF</button>
         </div>
-
-        <div class="h-right">
-          <p class="contact">
-            Gothenburg, Sweden<br />
-            <a href="tel:+46737846011">+46 73 784 60 11</a><br />
-            <a href="mailto:leo.celija@avertum.se">leo.celija@avertum.se</a><br />
-            <span>LinkedIn: </span><a href="https://www.linkedin.com/in/leocelija" target="_blank" rel="noopener">linkedin.com/in/leocelija</a><br />
-            <span>Web: </span><a href="https://www.avertum.se" target="_blank" rel="noopener">avertum.se</a>
-          </p>
+        <div class="contact">
+          Gothenburg, Sweden<br>
+          +46 73 784 60 11<br>
+          leo.celija@avertum.se<br>
+          linkedin.com/in/leocelija<br>
+          avertum.se
         </div>
       </header>
 
-      <main>
-        <section aria-labelledby="profile">
-          <h2 id="profile">Professional Profile</h2>
-          <p>
-            Senior business developer and consultant operating at the intersection of complex B2B sales and regulatory risk/compliance (GRC).
-            Background in international finance and Swedish industry, with a proven track record of driving growth, 
-            building C-level trust, and translating regulatory requirements into actionable control plans. 
-            Experienced in navigating security-critical environments involving supply chain risk, incident readiness, and audit preparation.
-          </p>
+      <section>
+        <h2>Professional Profile</h2>
+        <p>Senior business developer and consultant operating at the intersection of complex B2B sales and regulatory risk/compliance (GRC). Background in international finance and Swedish industry, with a proven track record of driving growth, building C-level trust, and translating regulatory requirements into actionable control plans.</p>
+        
+        <p class="subhead">Key Competencies</p>
+        <ul>
+          <li>Enterprise/KAM • Strategic B2B Sales • Stakeholder Management (C-level)</li>
+          <li>GRC (Risk/Compliance/Cyber) • ICT Risk &amp; Controls • Supply Chain Security</li>
+          <li>GAP Analysis &amp; Remediation • Incident Process &amp; Playbooks • CRM (Salesforce)</li>
+        </ul>
+      </section>
 
-          <p class="subhead">Key Competencies</p>
-          <ul class="skills">
-            <li>Enterprise/KAM • Strategic B2B Sales • Stakeholder Management (C-level)</li>
-            <li>GRC (Risk/Compliance/Cyber) • ICT Risk &amp; Controls • Supply Chain Security</li>
-            <li>GAP Analysis &amp; Remediation • Incident Process &amp; Playbooks • CRM (Salesforce)</li>
+      <section>
+        <h2>Experience</h2>
+        <div class="job">
+          <div class="job-head"><span>Founder &amp; Senior Consultant</span> <span>2022 – Present</span></div>
+          <span class="job-company">AVERTUM GROUP AB</span>
+          <ul>
+            <li><strong>Engagement Delivery:</strong> Leading strategic engagements within cyber/compliance and business risk.</li>
+            <li><strong>Deliverables:</strong> Established Incident Response Playbooks, Supplier Risk Frameworks, and audit evidence packs.</li>
+            <li><strong>Key Achievement:</strong> Generated <strong>1.8 MSEK</strong> in revenue during the first 7 months.</li>
+            <li><strong>Case Study:</strong> Conducted GAP analysis and risk assessment for an industrial client (Supply Chain Security).</li>
           </ul>
-        </section>
+        </div>
 
-        <section aria-labelledby="experience">
-          <h2 id="experience">Professional Experience</h2>
+        <div class="job">
+          <div class="job-head"><span>Key Account Manager (KAM)</span> <span>2022</span></div>
+          <span class="job-company">GÖTEBORG ENERGI</span>
+          <ul>
+            <li>Responsible for portfolio management and upselling to strategic key accounts (Real Estate &amp; Industry).</li>
+            <li>Led complex negotiations regarding energy solutions and infrastructure projects with profitability focus.</li>
+            <li>Acted as a strategic advisor on energy matters to decision-makers.</li>
+          </ul>
+        </div>
 
-          <div class="job">
-            <div class="job-head">
-              <span>Founder &amp; Senior Consultant</span>
-              <span>2022 – Present</span>
-            </div>
-            <span class="job-company">AVERTUM GROUP AB</span>
-            <ul class="bullets">
-              <li><strong>Engagement Delivery:</strong> Leading strategic engagements within cyber/compliance and business risk; analysis, prioritization, and execution alongside executive management.</li>
-              <li><strong>Deliverables:</strong> Established Incident Response Playbooks, Supplier Risk Frameworks, remediation plans, and compliance evidence packs for audit readiness.</li>
-              <li><strong>Key Achievement:</strong> Generated <strong>1.8 MSEK</strong> in revenue during the first 7 months by structurally targeting new market segments within industry/infrastructure.</li>
-              <li><strong>Case Study:</strong> Conducted GAP analysis and risk assessment for an industrial client, resulting in a robust implementation plan for Supply Chain Security.</li>
-            </ul>
+        <div class="job">
+          <div class="job-head"><span>Investment Consultant</span> <span>2021 – 2022</span></div>
+          <span class="job-company">FISHER INVESTMENTS | London</span>
+          <ul>
+            <li><strong>Top Performer:</strong> Ranked in the top tier globally. Responsible for full sales cycle targeting HNWI.</li>
+            <li>Managed prospecting, needs analysis, advisory dialogue, and closing in a regulated environment.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head"><span>Advisor / Sales Representative</span> <span>2017 – 2020</span></div>
+          <span class="job-company">SKANDIA</span>
+          <ul>
+            <li>Advisory services within insurance solutions and savings; focus on needs analysis and relationships.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="grid">
+          <div>
+            <p class="subhead">Academic</p>
+            <ul><li><strong>MSc in Political Science</strong> – University of Gothenburg (2016–2020)</li></ul>
           </div>
-
-          <div class="job">
-            <div class="job-head">
-              <span>Key Account Manager (KAM)</span>
-              <span>2022</span>
-            </div>
-            <span class="job-company">GÖTEBORG ENERGI</span>
-            <ul class="bullets">
-              <li>Responsible for portfolio management and upselling to strategic key accounts (Real Estate &amp; Industry).</li>
-              <li>Led complex negotiations regarding energy solutions and infrastructure projects with a focus on profitability.</li>
-              <li>Developed client account plans and acted as a strategic advisor on energy matters to decision-makers.</li>
-            </ul>
+          <div>
+            <p class="subhead">IT / Cyber</p>
+            <ul><li><strong>IT Security Specialist</strong> – IT-Högskolan (Graduation: 2026)</li></ul>
           </div>
+        </div>
+      </section>
 
-          <div class="job">
-            <div class="job-head">
-              <span>Investment Consultant</span>
-              <span>2021 – 2022</span>
-            </div>
-            <span class="job-company">FISHER INVESTMENTS | London</span>
-            <ul class="bullets">
-              <li><strong>Top Performer:</strong> Ranked in the top tier among sales representatives globally. Responsible for the full sales cycle targeting High Net Worth Individuals (HNWI).</li>
-              <li>Managed prospecting, needs analysis, advisory dialogue, and closing in a strictly regulated financial environment.</li>
-            </ul>
+      <section>
+        <h2>Tools &amp; Languages</h2>
+        <div class="grid">
+          <div>
+            <p class="subhead">Tools</p>
+            <ul><li>Salesforce / CRM • Microsoft 365 • Threat Intelligence (OSINT)</li></ul>
           </div>
-
-          <div class="job">
-            <div class="job-head">
-              <span>Advisor / Sales Representative</span>
-              <span>2017 – 2020</span>
-            </div>
-            <span class="job-company">SKANDIA</span>
-            <ul class="bullets">
-              <li>Advisory services within insurance solutions and savings for the private market; focus on needs analysis and relationship building.</li>
-            </ul>
+          <div>
+            <p class="subhead">Languages</p>
+            <ul><li>Swedish (Native) • English (Fluent)</li></ul>
           </div>
-        </section>
-
-        <section aria-labelledby="education">
-          <h2 id="education">Education</h2>
-          <div class="grid">
-            <div>
-              <p class="subhead">Academic</p>
-              <ul class="bullets">
-                <li><strong>MSc in Political Science</strong> – University of Gothenburg (2016–2020)</li>
-              </ul>
-            </div>
-            <div>
-              <p class="subhead">IT / Cyber</p>
-              <ul class="bullets">
-                <li><strong>IT Security Specialist (Ongoing)</strong> – IT-Högskolan (Graduation: June 2026)</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section aria-labelledby="tools">
-          <h2 id="tools">Tools &amp; Languages</h2>
-          <div class="grid">
-            <div>
-              <p class="subhead">Tools</p>
-              <ul class="bullets">
-                <li>Salesforce / CRM • Microsoft 365</li>
-                <li>Threat &amp; Market Intelligence (OSINT)</li>
-              </ul>
-            </div>
-            <div>
-              <p class="subhead">Languages</p>
-              <ul class="bullets">
-                <li>Swedish (Native) • English (Fluent)</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </main>
-    </article>
+        </div>
+      </section>
+    </div>
   </div>
 </body>
 </html>
