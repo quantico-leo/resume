@@ -7,7 +7,7 @@
 
   <style>
     /* =========================
-       LEO CELIJA - ENGLISH FINAL (Guaranteed 1 Page)
+       LEO CELIJA - ENGLISH AIRY (Smart Layout)
        ========================= */
 
     :root{ --ink:#111; --muted:#444; --accent:#1f2937; --line:#ddd; --bg:#fff; }
@@ -16,52 +16,54 @@
       margin:0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color:var(--ink);
-      line-height:1.2; /* Tightened for safety */
-      font-size: 9pt; /* Perfect size */
+      line-height:1.35; /* SKÖNT LÄSAVSTÅND */
+      font-size: 9.2pt; 
     }
     a{ color:inherit; text-decoration:none; }
     .page{ max-width: 850px; margin: 0 auto; padding: 0 15px; }
     
     .card{ border:none; padding: 0; }
 
-    header{ display:flex; justify-content:space-between; border-bottom: 2px solid var(--accent); padding-bottom: 5px; margin-bottom: 8px; padding-top: 10px; }
-    h1{ margin:0; font-size: 18pt; text-transform: uppercase; letter-spacing: 0.5px; }
-    .title{ margin:2px 0 0 0; font-weight:700; color:var(--muted); font-size: 10pt; }
+    header{ display:flex; justify-content:space-between; border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 15px; padding-top: 20px; }
+    h1{ margin:0; font-size: 20pt; text-transform: uppercase; letter-spacing: 0.5px; }
+    .title{ margin:2px 0 0 0; font-weight:700; color:var(--muted); font-size: 10.5pt; }
     
-    .contact{ font-size: 9pt; color:var(--muted); text-align:right; line-height: 1.3; }
+    .contact{ font-size: 9pt; color:var(--muted); text-align:right; line-height: 1.4; }
     
     h2{ 
-      margin: 6px 0 3px 0; 
-      font-size: 10pt; 
+      margin: 12px 0 6px 0; 
+      font-size: 10.5pt; 
       text-transform: uppercase; 
       color: var(--accent); 
       border-bottom: 1px solid var(--line); 
-      padding-bottom: 1px;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
     }
     
-    p{ margin: 0 0 3px 0; }
+    p{ margin: 0 0 6px 0; }
     
     .btn{ display:none; } 
     
-    .job{ margin-bottom: 6px; } 
-    .job-head{ display:flex; justify-content:space-between; font-weight: 700; font-size: 9.5pt; margin-bottom: 1px; }
-    .job-company{ font-weight: 700; color: var(--accent); font-size: 9pt; display:block; margin-bottom: 1px; }
+    /* HÄR ÄR MAGIN: Mer luft mellan jobben */
+    .job{ margin-bottom: 14px; } 
+    .job-head{ display:flex; justify-content:space-between; font-weight: 700; font-size: 10pt; margin-bottom: 2px; }
+    .job-company{ font-weight: 700; color: var(--accent); font-size: 9pt; display:block; margin-bottom: 3px; }
     
     ul{ margin: 0; padding-left: 15px; }
-    li{ margin-bottom: 1px; } 
+    li{ margin-bottom: 2px; } 
 
-    .grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 2px; }
-    .subhead{ font-weight: 700; font-size: 9pt; margin-bottom: 1px; text-transform:uppercase; color:var(--muted); }
+    /* Kompaktare botten för att spara plats */
+    .compact-section{ margin-bottom: 5px; }
+    .compact-row{ display:flex; gap: 20px; margin-bottom: 4px; }
+    .compact-label{ font-weight: 700; min-width: 80px; color:var(--muted); font-size: 9pt; }
 
-    /* Print settings - Force fit */
     @media print{
-      @page { margin: 8mm 10mm; size: A4; } 
+      @page { margin: 10mm 12mm; size: A4; } 
       body{ background:#fff; }
       .page{ margin: 0; padding: 0; max-width: none; }
       .btn{ display:none; }
       header{ display:block; padding-top: 0; }
-      .contact{ text-align:left; margin-top:4px; }
-      .grid{ grid-template-columns: 1fr 1fr; }
+      .contact{ text-align:left; margin-top:8px; }
     }
   </style>
 </head>
@@ -86,7 +88,7 @@
         <h2>Professional Profile</h2>
         <p>Senior business developer and consultant operating at the intersection of complex B2B sales and regulatory risk/compliance (GRC). Background in international finance and Swedish industry, with a proven track record of driving growth, building C-level trust, and translating regulatory requirements into actionable control plans.</p>
         
-        <p class="subhead">Key Competencies</p>
+        <p style="font-weight:700; font-size:9pt; margin-bottom:2px; text-transform:uppercase; color:#444;">Key Competencies</p>
         <ul>
           <li>Enterprise/KAM • Strategic B2B Sales • Stakeholder Management (C-level)</li>
           <li>GRC (Risk/Compliance/Cyber) • ICT Risk &amp; Controls • Supply Chain Security</li>
@@ -136,29 +138,23 @@
       </section>
 
       <section>
-        <h2>Education</h2>
-        <div class="grid">
-          <div>
-            <p class="subhead">Academic</p>
-            <ul><li><strong>MSc in Political Science</strong> – University of Gothenburg (2016–2020)</li></ul>
+        <h2>Education &amp; Skills</h2>
+        <div class="compact-section">
+          <div class="compact-row">
+            <span class="compact-label">Academic:</span>
+            <span><strong>MSc in Political Science</strong> – University of Gothenburg (2016–2020)</span>
           </div>
-          <div>
-            <p class="subhead">IT / Cyber</p>
-            <ul><li><strong>IT Security Specialist</strong> – IT-Högskolan (Graduation: June 2026)</li></ul>
+          <div class="compact-row">
+            <span class="compact-label">IT / Cyber:</span>
+            <span><strong>IT Security Specialist</strong> – IT-Högskolan (Graduation: June 2026)</span>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Tools &amp; Languages</h2>
-        <div class="grid">
-          <div>
-            <p class="subhead">Tools</p>
-            <ul><li>Salesforce / CRM • Microsoft 365 • Threat Intelligence (OSINT)</li></ul>
+          <div class="compact-row">
+            <span class="compact-label">Tools:</span>
+            <span>Salesforce / CRM • Microsoft 365 • Threat Intelligence (OSINT)</span>
           </div>
-          <div>
-            <p class="subhead">Languages</p>
-            <ul><li>Swedish (Native) • English (Fluent)</li></ul>
+          <div class="compact-row">
+            <span class="compact-label">Languages:</span>
+            <span>Swedish (Native) • English (Fluent)</span>
           </div>
         </div>
       </section>
