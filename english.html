@@ -25,7 +25,6 @@
       margin: 0 auto;
       padding: 28px 32px 32px 32px;
     }
-
     /* ── HEADER ── */
     .cv-header {
       border-top: 4px solid var(--accent);
@@ -61,7 +60,6 @@
     }
     .contact-bar a { color: var(--muted); text-decoration: none; }
     .contact-bar a:hover { text-decoration: underline; }
-
     /* ── SECTION HEADINGS ── */
     h2 {
       font-family: -apple-system, Arial, sans-serif;
@@ -74,15 +72,8 @@
       padding-bottom: 3px;
       margin: 18px 0 8px 0;
     }
-
     /* ── EXECUTIVE SUMMARY ── */
-    .summary p {
-      font-size: 10pt;
-      line-height: 1.5;
-      color: var(--ink);
-      margin-bottom: 0;
-    }
-
+    .summary p { font-size: 10pt; line-height: 1.5; color: var(--ink); margin-bottom: 0; }
     /* ── CORE COMPETENCIES TABLE ── */
     .competency-grid {
       display: grid;
@@ -97,7 +88,6 @@
       border-left: 3px solid var(--accent);
       line-height: 1.3;
     }
-
     /* ── EXPERIENCE ── */
     .exp-entry { margin-bottom: 16px; }
     .exp-header {
@@ -107,18 +97,8 @@
       gap: 8px;
       margin-bottom: 1px;
     }
-    .exp-role {
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 10.5pt;
-      font-weight: 700;
-      color: var(--ink);
-    }
-    .exp-dates {
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 9pt;
-      color: var(--muted);
-      white-space: nowrap;
-    }
+    .exp-role { font-family: -apple-system, Arial, sans-serif; font-size: 10.5pt; font-weight: 700; color: var(--ink); }
+    .exp-dates { font-family: -apple-system, Arial, sans-serif; font-size: 9pt; color: var(--muted); white-space: nowrap; }
     .exp-company {
       font-family: -apple-system, Arial, sans-serif;
       font-size: 9pt;
@@ -128,62 +108,20 @@
       margin-bottom: 5px;
       text-transform: uppercase;
     }
-    .exp-context {
-      font-size: 9.5pt;
-      font-style: italic;
-      color: var(--muted);
-      margin-bottom: 5px;
-    }
-    ul.cv-bullets {
-      padding-left: 14px;
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 9.3pt;
-    }
+    .exp-context { font-size: 9.5pt; font-style: italic; color: var(--muted); margin-bottom: 5px; }
+    ul.cv-bullets { padding-left: 14px; font-family: -apple-system, Arial, sans-serif; font-size: 9.3pt; }
     ul.cv-bullets li { margin-bottom: 3px; line-height: 1.4; }
     ul.cv-bullets li strong { color: var(--accent); }
-
     /* ── EDUCATION ── */
     .edu-entry { margin-bottom: 8px; }
-    .edu-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .edu-degree {
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 10pt;
-      font-weight: 700;
-    }
-    .edu-dates {
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 9pt;
-      color: var(--muted);
-    }
-    .edu-school {
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 9pt;
-      color: var(--muted);
-    }
-
+    .edu-row { display: flex; justify-content: space-between; align-items: baseline; }
+    .edu-degree { font-family: -apple-system, Arial, sans-serif; font-size: 10pt; font-weight: 700; }
+    .edu-dates { font-family: -apple-system, Arial, sans-serif; font-size: 9pt; color: var(--muted); }
+    .edu-school { font-family: -apple-system, Arial, sans-serif; font-size: 9pt; color: var(--muted); }
     /* ── SKILLS TABLE ── */
-    .skills-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 9.3pt;
-    }
-    .skills-table td {
-      padding: 4px 8px 4px 0;
-      vertical-align: top;
-      border-bottom: 1px solid var(--rule);
-    }
-    .skills-table td:first-child {
-      font-weight: 700;
-      color: var(--accent);
-      width: 140px;
-      white-space: nowrap;
-    }
-
+    .skills-table { width: 100%; border-collapse: collapse; font-family: -apple-system, Arial, sans-serif; font-size: 9.3pt; }
+    .skills-table td { padding: 4px 8px 4px 0; vertical-align: top; border-bottom: 1px solid var(--rule); }
+    .skills-table td:first-child { font-weight: 700; color: var(--accent); width: 140px; white-space: nowrap; }
     /* ── PRINT ── */
     @media print {
       @page { margin: 12mm 14mm; size: A4; }
@@ -199,7 +137,7 @@
   <!-- HEADER -->
   <div class="cv-header">
     <h1>Leo Celija</h1>
-    <p class="tagline">Senior Business Developer &amp; GRC Consultant &nbsp;|&nbsp; Cyber Security &nbsp;·&nbsp; Operational Resilience &nbsp;·&nbsp; Regulatory Compliance</p>
+    <p class="tagline">Senior GRC Consultant &amp; Business Developer &nbsp;&nbsp; Cyber Security &nbsp;&middot;&nbsp; NIS2 / DORA / EU AI Act &nbsp;&middot;&nbsp; Operational Resilience &nbsp;&middot;&nbsp; Regulatory Compliance</p>
     <div class="contact-bar">
       <span>Gothenburg, Sweden</span>
       <a href="tel:+46737846011">+46 73 784 60 11</a>
@@ -212,9 +150,7 @@
   <!-- EXECUTIVE SUMMARY -->
   <h2>Executive Summary</h2>
   <div class="summary">
-    <p>
-      Senior consultant and business developer with 15+ years of high-stakes commercial and advisory experience across financial services, critical infrastructure, and cyber/GRC. Combines deep regulatory expertise (NIS2, DORA, GDPR) with a proven ability to convert complex risk landscapes into executive-level control frameworks and actionable remediation plans. Trusted advisor to C-suite and Board in regulated industries. Track record of generating tangible business outcomes: 1.8 MSEK revenue in an expansion phase targeting Nordic infrastructure and industrial segments. Graduating IT Security Specialist (IT-Högskolan, June 2026).
-    </p>
+    <p>Senior consultant and business developer with 15+ years of high-stakes commercial and advisory experience across financial services, critical infrastructure, and cyber/GRC. Combines deep regulatory expertise (NIS2, DORA, GDPR, EU AI Act) with a proven ability to convert complex risk landscapes into executive-level control frameworks and actionable remediation plans. Trusted advisor to C-suite and Board in regulated industries. Track record of generating tangible business outcomes: 1.8 MSEK revenue in an expansion phase targeting Nordic infrastructure and industrial segments. Graduating IT Security Specialist (IT-Högskolan, June 2026).</p>
   </div>
 
   <!-- CORE COMPETENCIES -->
@@ -222,6 +158,7 @@
   <div class="competency-grid">
     <div class="item">GRC Frameworks &amp; Controls</div>
     <div class="item">NIS2 / DORA / GDPR Implementation</div>
+    <div class="item">EU AI Act Advisory</div>
     <div class="item">ICT Risk &amp; Supply Chain Security</div>
     <div class="item">GAP Analysis &amp; Remediation Planning</div>
     <div class="item">Incident Response &amp; Playbooks</div>
@@ -230,7 +167,6 @@
     <div class="item">Enterprise &amp; KAM Sales (B2B)</div>
     <div class="item">Audit Readiness &amp; Evidence Packs</div>
     <div class="item">OSINT &amp; Threat Intelligence</div>
-    <div class="item">Salesforce / CRM</div>
     <div class="item">Interim Consulting Engagements</div>
   </div>
 
@@ -240,14 +176,14 @@
   <div class="exp-entry">
     <div class="exp-header">
       <span class="exp-role">Founder &amp; Senior GRC Consultant</span>
-      <span class="exp-dates">2022 – Present</span>
+      <span class="exp-dates">2022 &ndash; Present</span>
     </div>
-    <div class="exp-company">Avertum Group AB &nbsp;·&nbsp; Gothenburg, Sweden</div>
+    <div class="exp-company">Avertum Group AB &nbsp;&nbsp; Gothenburg, Sweden</div>
     <p class="exp-context">Boutique advisory firm specialising in cyber/GRC, operational resilience, and strategic risk for SME and critical infrastructure clients.</p>
     <ul class="cv-bullets">
       <li>Leads end-to-end GRC engagements: scoping, risk assessment, control design, and executive reporting aligned to NIS2 and DORA.</li>
       <li><strong>Revenue:</strong> Generated 1.8 MSEK during targeted expansion into Nordic infrastructure and industrial verticals.</li>
-      <li><strong>Key deliverable:</strong> Designed and implemented a Supply Chain Security framework for a mid-size industrial client following a full GAP analysis and ICT risk assessment — resulting in an auditable remediation roadmap adopted by Board.</li>
+      <li><strong>Key deliverable:</strong> Designed and implemented a Supply Chain Security framework for a mid-size industrial client following a full GAP analysis and ICT risk assessment &mdash; resulting in an auditable remediation roadmap adopted by Board.</li>
       <li>Produced Incident Response Playbooks, Supplier Risk Frameworks, and compliance evidence packs enabling clients to pass regulatory audits.</li>
       <li>Acts as virtual CISO / Compliance Officer for select retained clients, providing continuity between engagements.</li>
     </ul>
@@ -256,9 +192,9 @@
   <div class="exp-entry">
     <div class="exp-header">
       <span class="exp-role">Key Account Manager</span>
-      <span class="exp-dates">2018 – 2020</span>
+      <span class="exp-dates">2018 &ndash; 2020</span>
     </div>
-    <div class="exp-company">Göteborg Energi &nbsp;·&nbsp; Gothenburg, Sweden</div>
+    <div class="exp-company">Göteborg Energi &nbsp;&nbsp; Gothenburg, Sweden</div>
     <p class="exp-context">State-owned energy utility; critical infrastructure operator serving 300,000+ customers across the Gothenburg region.</p>
     <ul class="cv-bullets">
       <li>Managed strategic key accounts within Real Estate and Industrial segments; responsible for portfolio retention and structured upsell.</li>
@@ -270,12 +206,12 @@
   <div class="exp-entry">
     <div class="exp-header">
       <span class="exp-role">Investment Consultant</span>
-      <span class="exp-dates">2014 – 2015</span>
+      <span class="exp-dates">2014 &ndash; 2015</span>
     </div>
-    <div class="exp-company">Fisher Investments &nbsp;·&nbsp; London, United Kingdom</div>
+    <div class="exp-company">Fisher Investments &nbsp;&nbsp; London, United Kingdom</div>
     <p class="exp-context">Global asset management firm with USD 200B+ AUM; operates in a strictly FCA-regulated advisory environment targeting HNWI clients.</p>
     <ul class="cv-bullets">
-      <li><strong>Top performer</strong> globally among sales representatives — ranked in the top tier within European operations.</li>
+      <li><strong>Top performer</strong> globally among sales representatives &mdash; ranked in the top tier within European operations.</li>
       <li>Owned the full advisory sales cycle for High Net Worth Individuals (HNWI): prospecting, needs analysis, portfolio suitability assessment, and closing under FCA regulatory requirements.</li>
       <li>Developed competency in complex risk dialogue, trust-building with sophisticated investors, and compliance-driven sales processes.</li>
     </ul>
@@ -284,9 +220,9 @@
   <div class="exp-entry">
     <div class="exp-header">
       <span class="exp-role">Financial Advisor &amp; Sales Representative</span>
-      <span class="exp-dates">2010 – 2014</span>
+      <span class="exp-dates">2010 &ndash; 2014</span>
     </div>
-    <div class="exp-company">Skandia &nbsp;·&nbsp; Sweden</div>
+    <div class="exp-company">Skandia &nbsp;&nbsp; Sweden</div>
     <p class="exp-context">Leading Nordic life insurance and asset management group; Finansinspektionen (FI) regulated environment.</p>
     <ul class="cv-bullets">
       <li>Provided needs-based advisory services within insurance solutions, pensions, and savings to private clients.</li>
@@ -300,17 +236,17 @@
   <div class="edu-entry">
     <div class="edu-row">
       <span class="edu-degree">IT Security Specialist (IT-säkerhetsspecialist)</span>
-      <span class="edu-dates">2024 – Jun 2026</span>
+      <span class="edu-dates">2024 &ndash; Jun 2026</span>
     </div>
-    <div class="edu-school">IT-Högskolan &nbsp;·&nbsp; Gothenburg &nbsp;·&nbsp; <em>Expected graduation: June 2026</em></div>
+    <div class="edu-school">IT-Högskolan &nbsp;&nbsp; Gothenburg &nbsp;&nbsp; <em>Expected graduation: June 2026</em></div>
   </div>
 
   <div class="edu-entry">
     <div class="edu-row">
-      <span class="edu-degree">Master of Science (MSc) – Political Science</span>
-      <span class="edu-dates">2016 – 2020</span>
+      <span class="edu-degree">Master of Science (MSc) &ndash; Political Science</span>
+      <span class="edu-dates">2016 &ndash; 2020</span>
     </div>
-    <div class="edu-school">University of Gothenburg (Göteborgs Universitet) &nbsp;·&nbsp; Gothenburg</div>
+    <div class="edu-school">University of Gothenburg (Göteborgs Universitet) &nbsp;&nbsp; Gothenburg</div>
   </div>
 
   <!-- SKILLS & TOOLS -->
@@ -318,7 +254,7 @@
   <table class="skills-table">
     <tr>
       <td>Regulatory</td>
-      <td>NIS2, DORA, GDPR, ISO 27001 (orientation), Swedish MSB guidelines</td>
+      <td>NIS2, DORA, GDPR, EU AI Act, ISO 27001 (orientation), Swedish MSB guidelines</td>
     </tr>
     <tr>
       <td>GRC / Risk</td>
@@ -334,7 +270,7 @@
     </tr>
     <tr>
       <td>Languages</td>
-      <td>Swedish (native) &nbsp;·&nbsp; English (fluent)</td>
+      <td>Swedish (native) &nbsp;&middot;&nbsp; English (fluent)</td>
     </tr>
   </table>
 
