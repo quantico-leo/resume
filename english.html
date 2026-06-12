@@ -3,126 +3,159 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leo Celija – Curriculum Vitae</title>
+  <title>Leo Celija | Senior GRC & Compliance Consultant</title>
   <style>
-    :root{
-      --ink: #0d0d0d;
-      --muted: #4a4a4a;
-      --accent: #0a2540;
-      --rule: #b0b8c1;
-      --light: #f4f6f8;
-    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: "Georgia", "Times New Roman", serif;
-      font-size: 10pt;
-      color: var(--ink);
-      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11pt;
       line-height: 1.45;
+      color: #111;
+      background: #fff;
     }
+
     .page {
       max-width: 800px;
       margin: 0 auto;
       padding: 28px 32px 32px 32px;
     }
-    /* ── HEADER ── */
+
     .cv-header {
-      border-top: 4px solid var(--accent);
+      border-top: 2px solid #0a2540;
       padding-top: 16px;
       margin-bottom: 18px;
     }
+
     .cv-header h1 {
-      font-family: "Georgia", serif;
       font-size: 22pt;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 0.3px;
       text-transform: uppercase;
-      color: var(--accent);
+      color: #0a2540;
       margin-bottom: 3px;
     }
+
     .cv-header .tagline {
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 10.5pt;
-      font-weight: 600;
-      color: var(--muted);
-      letter-spacing: 0.3px;
+      font-size: 11pt;
+      font-weight: 700;
+      color: #111;
       margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
+
     .contact-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px 18px;
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 8.8pt;
-      color: var(--muted);
-      border-top: 1px solid var(--rule);
+      gap: 4px 16px;
+      font-size: 9.5pt;
+      color: #555;
+      border-top: 1px solid #c7cdd4;
       padding-top: 8px;
     }
-    .contact-bar a { color: var(--muted); text-decoration: none; }
-    .contact-bar a:hover { text-decoration: underline; }
-    /* ── SECTION HEADINGS ── */
+
+    .contact-bar a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+
+    .print-btn {
+      margin-top: 10px;
+      display: inline-block;
+      font-size: 9pt;
+      font-weight: 600;
+      padding: 6px 14px;
+      background: #0a2540;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
     h2 {
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 8.5pt;
+      font-size: 10pt;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 1.4px;
-      color: var(--accent);
-      border-bottom: 1.5px solid var(--accent);
+      letter-spacing: 0.8px;
+      color: #0a2540;
+      border-bottom: 1px solid #c7cdd4;
       padding-bottom: 3px;
-      margin: 18px 0 8px 0;
+      margin: 20px 0 10px 0;
+      page-break-after: avoid;
     }
-    /* ── EXECUTIVE SUMMARY ── */
-    .summary p { font-size: 10pt; line-height: 1.5; color: var(--ink); margin-bottom: 0; }
-    /* ── CORE COMPETENCIES TABLE ── */
-    .competency-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 4px 10px;
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 9pt;
+
+    .summary p {
+      font-size: 10.5pt;
+      line-height: 1.5;
     }
-    .competency-grid .item {
-      background: var(--light);
-      padding: 4px 8px;
-      border-left: 3px solid var(--accent);
-      line-height: 1.3;
+
+    ul.cv-bullets {
+      padding-left: 18px;
+      font-size: 10pt;
     }
-    /* ── EXPERIENCE ── */
-    .exp-entry { margin-bottom: 16px; }
-    .exp-header {
+
+    ul.cv-bullets li {
+      margin-bottom: 4px;
+      line-height: 1.45;
+    }
+
+    .compact-list li {
+      margin-bottom: 2px;
+    }
+
+    .exp-entry,
+    .edu-entry {
+      margin-bottom: 16px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .exp-header,
+    .edu-row {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       gap: 8px;
-      margin-bottom: 1px;
+      margin-bottom: 2px;
     }
-    .exp-role { font-family: -apple-system, Arial, sans-serif; font-size: 10.5pt; font-weight: 700; color: var(--ink); }
-    .exp-dates { font-family: -apple-system, Arial, sans-serif; font-size: 9pt; color: var(--muted); white-space: nowrap; }
-    .exp-company {
-      font-family: -apple-system, Arial, sans-serif;
-      font-size: 9pt;
+
+    .exp-role,
+    .edu-degree {
+      font-size: 10.8pt;
       font-weight: 700;
-      color: var(--accent);
-      letter-spacing: 0.3px;
+      color: #111;
+    }
+
+    .exp-dates,
+    .edu-dates {
+      font-size: 9.5pt;
+      color: #555;
+      white-space: nowrap;
+    }
+
+    .exp-company {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #0a2540;
       margin-bottom: 5px;
       text-transform: uppercase;
     }
-    .exp-context { font-size: 9.5pt; font-style: italic; color: var(--muted); margin-bottom: 5px; }
-    ul.cv-bullets { padding-left: 14px; font-family: -apple-system, Arial, sans-serif; font-size: 9.3pt; }
-    ul.cv-bullets li { margin-bottom: 3px; line-height: 1.4; }
-    ul.cv-bullets li strong { color: var(--accent); }
-    /* ── EDUCATION ── */
-    .edu-entry { margin-bottom: 8px; }
-    .edu-row { display: flex; justify-content: space-between; align-items: baseline; }
-    .edu-degree { font-family: -apple-system, Arial, sans-serif; font-size: 10pt; font-weight: 700; }
-    .edu-dates { font-family: -apple-system, Arial, sans-serif; font-size: 9pt; color: var(--muted); }
-    .edu-school { font-family: -apple-system, Arial, sans-serif; font-size: 9pt; color: var(--muted); }
-    /* ── SKILLS TABLE ── */
-    .skills-table { width: 100%; border-collapse: collapse; font-family: -apple-system, Arial, sans-serif; font-size: 9.3pt; }
-    .skills-table td { padding: 4px 8px 4px 0; vertical-align: top; border-bottom: 1px solid var(--rule); }
-    .skills-table td:first-child { font-weight: 700; color: var(--accent); width: 140px; white-space: nowrap; }
-    /* ── PRINT ── */
+
+    .edu-school {
+      font-size: 9.5pt;
+      color: #555;
+    }
+    
+    .skills-block {
+      font-size: 10pt;
+      line-height: 1.5;
+    }
+
     @media print {
       @page { margin: 12mm 14mm; size: A4; }
       body { background: #fff; }
@@ -132,160 +165,131 @@
   </style>
 </head>
 <body>
-<div class="page">
+  <div class="page">
 
-  <!-- HEADER -->
-  <div class="cv-header">
-    <h1>Leo Celija</h1>
-    <p class="tagline">Senior GRC Consultant &amp; Business Developer &nbsp;&nbsp; Cyber Security &nbsp;&middot;&nbsp; NIS2 / DORA / EU AI Act &nbsp;&middot;&nbsp; Operational Resilience &nbsp;&middot;&nbsp; Regulatory Compliance</p>
-    <div class="contact-bar">
-      <span>Gothenburg, Sweden</span>
-      <a href="tel:+46737846011">+46 73 784 60 11</a>
-      <a href="mailto:leo@avertum.se">leo@avertum.se</a>
-      <a href="https://www.linkedin.com/in/leocelija" target="_blank">linkedin.com/in/leocelija</a>
-      <a href="https://www.avertum.se" target="_blank">avertum.se</a>
+    <div class="cv-header">
+      <h1>Leo Celija</h1>
+      <p class="tagline">GRC | Compliance | Risk | Regulated Environments</p>
+      <div class="contact-bar">
+        <span>Gothenburg, Sweden (Open to International Mandates)</span>
+        <a href="tel:+46737846011">+46 73 784 60 11</a>
+        <a href="mailto:leo@avertum.se">leo@avertum.se</a>
+        <a href="https://www.linkedin.com/in/leocelija" target="_blank" rel="noopener noreferrer">linkedin.com/in/leocelija</a>
+        <a href="https://www.avertum.se" target="_blank" rel="noopener noreferrer">avertum.se</a>
+      </div>
     </div>
-  </div>
 
-  <!-- EXECUTIVE SUMMARY -->
-  <h2>Executive Summary</h2>
-  <div class="summary">
-    <p>Senior consultant and business developer with 15+ years of high-stakes commercial and advisory experience across financial services, critical infrastructure, and cyber/GRC. Combines deep regulatory expertise (NIS2, DORA, GDPR, EU AI Act) with a proven ability to convert complex risk landscapes into executive-level control frameworks and actionable remediation plans. Trusted advisor to C-suite and Board in regulated industries. Track record of generating tangible business outcomes: 1.8 MSEK revenue in an expansion phase targeting Nordic infrastructure and industrial segments. Completed Cybersecurity and Protection of Digital Assets (XeDrix Institute of Higher Education, 2026-05-31, VG — distinction in all modules).</p>
-  </div>
+    <button class="print-btn no-print" onclick="window.print()">Print / Save as PDF</button>
 
-  <!-- CORE COMPETENCIES -->
-  <h2>Core Competencies</h2>
-  <div class="competency-grid">
-    <div class="item">GRC Frameworks &amp; Controls</div>
-    <div class="item">NIS2 / DORA / GDPR Implementation</div>
-    <div class="item">EU AI Act Advisory</div>
-    <div class="item">ICT Risk &amp; Supply Chain Security</div>
-    <div class="item">GAP Analysis &amp; Remediation Planning</div>
-    <div class="item">Incident Response &amp; Playbooks</div>
-    <div class="item">Operational Resilience</div>
-    <div class="item">Stakeholder Management (C-level / Board)</div>
-    <div class="item">Enterprise &amp; KAM Sales (B2B)</div>
-    <div class="item">Audit Readiness &amp; Evidence Packs</div>
-    <div class="item">OSINT &amp; Threat Intelligence</div>
-    <div class="item">Interim Consulting Engagements</div>
-  </div>
-
-  <!-- PROFESSIONAL EXPERIENCE -->
-  <h2>Professional Experience</h2>
-
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">Founder &amp; Senior GRC Consultant</span>
-      <span class="exp-dates">2022 &ndash; Present</span>
+    <h2>Professional Summary</h2>
+    <div class="summary">
+      <p>Senior Governance, Risk and Compliance (GRC) consultant with 15+ years of experience across financial services, critical infrastructure and regulated environments. Strong track record of designing and implementing risk and control frameworks aligned with NIS2, DORA, GDPR and related regulations, and translating complex risk into clear Board-level reporting and executable remediation plans. Combines hands-on consulting and virtual CISO/compliance work with proven commercial performance, including 1.8 MSEK in new revenue during an expansion phase into Nordic infrastructure and industrial clients.</p>
     </div>
-    <div class="exp-company">Avertum Group AB &nbsp;&nbsp; Gothenburg, Sweden</div>
-    <p class="exp-context">Boutique advisory firm specialising in cyber/GRC, operational resilience, and strategic risk for SME and critical infrastructure clients.</p>
-    <ul class="cv-bullets">
-      <li>Leads end-to-end GRC engagements: scoping, risk assessment, control design, and executive reporting aligned to NIS2 and DORA.</li>
-      <li><strong>Revenue:</strong> Generated 1.8 MSEK during targeted expansion into Nordic infrastructure and industrial verticals.</li>
-      <li><strong>Key deliverable:</strong> Designed and implemented a Supply Chain Security framework for a mid-size industrial client following a full GAP analysis and ICT risk assessment &mdash; resulting in an auditable remediation roadmap adopted by Board.</li>
-      <li>Produced Incident Response Playbooks, Supplier Risk Frameworks, and compliance evidence packs enabling clients to pass regulatory audits.</li>
-      <li>Acts as virtual CISO / Compliance Officer for select retained clients, providing continuity between engagements.</li>
+
+    <h2>Core Competencies</h2>
+    <ul class="cv-bullets compact-list">
+      <li><strong>Regulatory Compliance:</strong> NIS2, DORA, GDPR, EU AI Act, FCA & FI regulations</li>
+      <li><strong>Risk & Governance:</strong> Risk assessments, control design, GAP analysis, audit readiness</li>
+      <li><strong>Resilience:</strong> Incident response playbooks, business continuity, ICT & third-party risk</li>
+      <li><strong>Strategic Advisory:</strong> Board-level reporting, C-level stakeholder management</li>
+      <li><strong>Commercial:</strong> Key account management, complex B2B sales in regulated sectors</li>
     </ul>
-  </div>
 
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">Key Account Manager</span>
-      <span class="exp-dates">2018 &ndash; 2020</span>
+    <h2>Professional Experience</h2>
+
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Founder & Senior GRC Consultant</span>
+        <span class="exp-dates">2022 &ndash; Present</span>
+      </div>
+      <div class="exp-company">Avertum Group AB, Gothenburg, Sweden</div>
+      <ul class="cv-bullets">
+        <li>Lead end-to-end GRC and compliance engagements for SME and mid-market clients in financial services-adjacent and critical infrastructure sectors.</li>
+        <li>Perform risk assessments, GAP analyses, control design and executive reporting aligned with NIS2, DORA, GDPR and ISO 27001-oriented practices.</li>
+        <li>Designed and implemented a supply chain security framework for an industrial client following a full ICT risk assessment, resulting in an audit-ready remediation roadmap approved at Board level.</li>
+        <li>Developed incident response playbooks, supplier risk frameworks and compliance evidence packs that enabled clients to pass external audits and regulatory reviews.</li>
+        <li>Act as virtual CISO / Compliance Officer for selected retained clients, providing ongoing advisory support and risk reporting.</li>
+        <li>Generated approximately 1.8 MSEK in revenue during a targeted expansion into Nordic infrastructure and industrial verticals.</li>
+      </ul>
     </div>
-    <div class="exp-company">Göteborg Energi &nbsp;&nbsp; Gothenburg, Sweden</div>
-    <p class="exp-context">State-owned energy utility; critical infrastructure operator serving 300,000+ customers across the Gothenburg region.</p>
-    <ul class="cv-bullets">
-      <li>Managed strategic key accounts within Real Estate and Industrial segments; responsible for portfolio retention and structured upsell.</li>
-      <li>Led complex, multi-stakeholder negotiations on energy solutions and long-term infrastructure contracts, with direct P&amp;L accountability.</li>
-      <li>Developed client account plans and acted as strategic energy advisor to C-level decision-makers.</li>
-    </ul>
-  </div>
 
-          <div class="exp-entry">
-          <div class="exp-header">
-            <span class="exp-role">Independent Consultant &ndash; Advisory &amp; Business Development</span>
-            <span class="exp-dates">2020 &ndash; 2022</span>
-          </div>
-          <div class="exp-company">Self-employed &nbsp;&nbsp; Sweden</div>
-          <ul class="cv-bullets">
-            <li>Provided advisory and business development services to SME clients across sectors including finance and technology.</li>
-            <li>Built foundational knowledge in regulatory risk and compliance frameworks ahead of formal GRC specialisation.</li>
-          </ul>
-        </div>
-
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">Investment Consultant</span>
-      <span class="exp-dates">2014 &ndash; 2016</span>
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Independent Consultant – Advisory & Business Development</span>
+        <span class="exp-dates">2020 &ndash; 2022</span>
+      </div>
+      <div class="exp-company">Self-employed, Sweden</div>
+      <ul class="cv-bullets">
+        <li>Provided advisory and business development services to SME clients, primarily within finance and technology sectors.</li>
+        <li>Supported clients with go-to-market strategy, customer acquisition, and commercial negotiation.</li>
+        <li>Deepened practical knowledge of regulatory risk and compliance frameworks ahead of formal GRC specialisation.</li>
+      </ul>
     </div>
-    <div class="exp-company">Fisher Investments &nbsp;&nbsp; London, United Kingdom</div>
-    <p class="exp-context">Global asset management firm with USD 200B+ AUM; operates in a strictly FCA-regulated advisory environment targeting HNWI clients.</p>
-    <ul class="cv-bullets">
-      <li><strong>Top performer</strong> globally among sales representatives &mdash; ranked in the top tier within European operations.</li>
-      <li>Owned the full advisory sales cycle for High Net Worth Individuals (HNWI): prospecting, needs analysis, portfolio suitability assessment, and closing under FCA regulatory requirements.</li>
-      <li>Developed competency in complex risk dialogue, trust-building with sophisticated investors, and compliance-driven sales processes.</li>
-    </ul>
-  </div>
 
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">Financial Advisor &amp; Sales Representative</span>
-      <span class="exp-dates">2010 &ndash; 2014</span>
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Key Account Manager</span>
+        <span class="exp-dates">2018 &ndash; 2020</span>
+      </div>
+      <div class="exp-company">Göteborg Energi, Gothenburg, Sweden</div>
+      <ul class="cv-bullets">
+        <li>Managed strategic key accounts within Real Estate and Industrial segments in a critical infrastructure environment serving 300,000+ customers.</li>
+        <li>Owned account plans, portfolio development, contract renewals and structured upsell, with direct responsibility for profitability and retention.</li>
+        <li>Led complex, multi-stakeholder negotiations on long-term energy and infrastructure contracts with C-level and senior decision-makers.</li>
+        <li>Acted as a strategic advisor to client executives on energy solutions, business risk, and long-term infrastructure planning.</li>
+      </ul>
     </div>
-    <div class="exp-company">Skandia &nbsp;&nbsp; Sweden</div>
-    <p class="exp-context">Leading Nordic life insurance and asset management group; Finansinspektionen (FI) regulated environment.</p>
-    <ul class="cv-bullets">
-      <li>Provided needs-based advisory services within insurance solutions, pensions, and savings to private clients.</li>
-      <li>Built long-term client relationships focused on financial risk awareness and product suitability under Swedish financial regulation.</li>
-    </ul>
-  </div>
 
-  <!-- EDUCATION -->
-  <h2>Education</h2>
-
-  <div class="edu-entry">
-    <div class="edu-row">
-      <span class="edu-degree">Cybersecurity and Protection of Digital Assets </span>
-      <span class="edu-dates">2024 &ndash; 2026</span>
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Investment Consultant (HNWI)</span>
+        <span class="exp-dates">2014 &ndash; 2016</span>
+      </div>
+      <div class="exp-company">Fisher Investments, London, United Kingdom</div>
+      <ul class="cv-bullets">
+        <li>Worked in a strictly FCA-regulated environment providing advisory services to High Net Worth Individuals (HNWI) across Europe.</li>
+        <li>Owned the full advisory sales cycle: prospecting, needs analysis, portfolio suitability assessment, risk discussions and closing in line with FCA requirements.</li>
+        <li>Ranked in the top tier of sales performers within the European operation based on revenue and conversion metrics.</li>
+        <li>Developed strong skills in risk communication, client suitability assessment, documentation and compliance-driven advisory processes.</li>
+      </ul>
     </div>
-    <div class="edu-school">XeDrix Institute of Higher Education &nbsp;&nbsp; Gothenburg &nbsp;&nbsp; Completed: 2026-05-31 · Grade: VG (Distinction) in all modules</div>
-  </div>
 
-  <div class="edu-entry">
-    <div class="edu-row">
-      <span class="edu-degree">Master of Science &ndash; Political Science & Science and Technology Studies (STS)</span>
-      <span class="edu-dates">2001 &ndash; 2006</span>
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Financial Advisor & Sales Representative</span>
+        <span class="exp-dates">2010 &ndash; 2014</span>
+      </div>
+      <div class="exp-company">Skandia, Sweden</div>
+      <ul class="cv-bullets">
+        <li>Provided needs-based advice on pensions, insurance and savings products in a Finansinspektionen (FI)-regulated environment.</li>
+        <li>Built and maintained long-term client relationships with a focus on financial risk awareness, product suitability and regulatory requirements.</li>
+      </ul>
     </div>
-    <div class="edu-school">University of Gothenburg (Göteborgs Universitet) &nbsp;&nbsp; Gothenburg</div>
+
+    <h2>Education</h2>
+
+    <div class="edu-entry">
+      <div class="edu-row">
+        <span class="edu-degree">Cybersecurity and Protection of Digital Assets</span>
+        <span class="edu-dates">2024 &ndash; 2026</span>
+      </div>
+      <div class="edu-school">XeDrix Institute of Higher Education, Gothenburg, Sweden <br> Completed: 2026-05-31 · Grade: VG (Distinction) in all modules</div>
+    </div>
+
+    <div class="edu-entry">
+      <div class="edu-row">
+        <span class="edu-degree">Master of Science – Political Science & Science and Technology Studies (STS)</span>
+        <span class="edu-dates">2001 &ndash; 2006</span>
+      </div>
+      <div class="edu-school">University of Gothenburg (Göteborgs Universitet), Gothenburg, Sweden</div>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills-block">
+      <p>Governance, Risk and Compliance (GRC); Regulatory compliance (NIS2, DORA, GDPR, EU AI Act); Risk assessment; Internal controls; Operational resilience; Third-party risk; Incident response; Audit readiness; Financial services advisory; Key account management; Stakeholder management (C-level / Board); OSINT; Threat intelligence; Microsoft 365; Salesforce; GCP; Cloudflare.</p>
+      <p style="margin-top: 6px;"><strong>Languages:</strong> Swedish (Native), English (Fluent / Professional working proficiency)</p>
+    </div>
+
   </div>
-
-  <!-- SKILLS & TOOLS -->
-  <h2>Skills &amp; Tools</h2>
-  <table class="skills-table">
-    <tr>
-      <td>Regulatory</td>
-      <td>NIS2, DORA, GDPR, EU AI Act, ISO 27001 (orientation), Swedish MSB guidelines</td>
-    </tr>
-    <tr>
-      <td>GRC / Risk</td>
-      <td>Risk assessment, control mapping, GAP analysis, Incident Response, Business Continuity</td>
-    </tr>
-    <tr>
-      <td>Intelligence</td>
-      <td>OSINT, Threat Intelligence, Supplier / Third-party risk profiling</td>
-    </tr>
-    <tr>
-      <td>Technology</td>
-      <td>Microsoft 365, Salesforce / CRM, Google Cloud Platform (GCP), Cloudflare</td>
-    </tr>
-    <tr>
-      <td>Languages</td>
-      <td>Swedish (native) &nbsp;&middot;&nbsp; English (fluent)</td>
-    </tr>
-  </table>
-
-</div>
 </body>
 </html>
