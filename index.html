@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leo Celija | Senior GRC & Cybersecurity Consultant</title>
+  <title>Leo Celija | GRC & Compliance</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 11pt;
@@ -13,16 +14,19 @@
       color: #111;
       background: #fff;
     }
+
     .page {
       max-width: 800px;
       margin: 0 auto;
       padding: 28px 32px 32px 32px;
     }
+
     .cv-header {
       border-top: 2px solid #0a2540;
       padding-top: 16px;
       margin-bottom: 18px;
     }
+
     .cv-header h1 {
       font-size: 22pt;
       font-weight: 700;
@@ -31,18 +35,16 @@
       color: #0a2540;
       margin-bottom: 3px;
     }
+
     .cv-header .tagline {
       font-size: 11pt;
       font-weight: 700;
       color: #111;
-      margin-bottom: 2px;
-    }
-    .cv-header .tagline.secondary {
-      font-size: 9.5pt;
-      font-weight: 500;
-      color: #555;
       margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
+
     .contact-bar {
       display: flex;
       flex-wrap: wrap;
@@ -52,7 +54,16 @@
       border-top: 1px solid #c7cdd4;
       padding-top: 8px;
     }
-    .contact-bar a { color: #555; text-decoration: none; }
+
+    .contact-bar a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+
     .print-btn {
       margin-top: 10px;
       display: inline-block;
@@ -65,6 +76,7 @@
       cursor: pointer;
       border-radius: 3px;
     }
+
     h2 {
       font-size: 10pt;
       font-weight: 700;
@@ -76,43 +88,56 @@
       margin: 20px 0 10px 0;
       page-break-after: avoid;
     }
+
     .summary p {
       font-size: 10.5pt;
       line-height: 1.5;
     }
+
     ul.cv-bullets {
       padding-left: 18px;
       font-size: 10pt;
     }
+
     ul.cv-bullets li {
       margin-bottom: 4px;
       line-height: 1.45;
     }
+
     .compact-list li {
       margin-bottom: 2px;
     }
-    .exp-entry, .edu-entry {
+
+    .exp-entry,
+    .edu-entry {
       margin-bottom: 16px;
       page-break-inside: avoid;
       break-inside: avoid;
     }
-    .exp-header, .edu-row {
+
+    .exp-header,
+    .edu-row {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       gap: 8px;
       margin-bottom: 2px;
     }
-    .exp-role, .edu-degree {
+
+    .exp-role,
+    .edu-degree {
       font-size: 10.8pt;
       font-weight: 700;
       color: #111;
     }
-    .exp-dates, .edu-dates {
+
+    .exp-dates,
+    .edu-dates {
       font-size: 9.5pt;
       color: #555;
       white-space: nowrap;
     }
+
     .exp-company {
       font-size: 9.5pt;
       font-weight: 700;
@@ -120,14 +145,12 @@
       margin-bottom: 5px;
       text-transform: uppercase;
     }
-    .exp-context, .edu-school {
+
+    .edu-school {
       font-size: 9.5pt;
       color: #555;
     }
-    .exp-context {
-      font-style: italic;
-      margin-bottom: 6px;
-    }
+
     @media print {
       @page { margin: 12mm 14mm; size: A4; }
       body { background: #fff; }
@@ -137,131 +160,138 @@
   </style>
 </head>
 <body>
-<div class="page">
-  <div class="cv-header">
-    <h1>Leo Celija</h1>
-    <p class="tagline">Senior GRC & Cybersecurity Consultant | NIS2 · DORA · Operational Resilience</p>
-    <p class="tagline secondary">Reglerade miljöer | Kritisk infrastruktur | Styrelse- och ledningsrådgivning</p>
-    <div class="contact-bar">
-      <span>Göteborg, Sverige</span>
-      <a href="tel:+46737846011">073-784 60 11</a>
-      <a href="mailto:leo@avertum.se">leo@avertum.se</a>
-      <a href="https://www.linkedin.com/in/leocelija" target="_blank" rel="noopener noreferrer">linkedin.com/in/leocelija</a>
-      <a href="https://www.avertum.se" target="_blank" rel="noopener noreferrer">avertum.se</a>
+  <div class="page">
+
+    <div class="cv-header">
+      <h1>Leo Celija</h1>
+      <p class="tagline">GRC | Compliance | Risk | Reglerade verksamheter</p>
+      <div class="contact-bar">
+        <span>Göteborg, Sverige</span>
+        <a href="tel:+46737846011">073-784 60 11</a>
+        <a href="mailto:leo@avertum.se">leo@avertum.se</a>
+        <a href="https://www.linkedin.com/in/leocelija" target="_blank" rel="noopener noreferrer">linkedin.com/in/leocelija</a>
+        <a href="https://www.avertum.se" target="_blank" rel="noopener noreferrer">avertum.se</a>
+      </div>
     </div>
-  </div>
-  <button class="print-btn no-print" onclick="window.print()">Skriv ut / Spara som PDF</button>
-  
-  <h2>Sammanfattning</h2>
-  <div class="summary">
-    <p>Senior GRC & Cybersecurity Consultant med 15+ års erfarenhet från reglerade miljöer inom finansiella tjänster, kritisk infrastruktur och SME-rådgivning. Specialiserad på NIS2, DORA, ICT-risk och operationell resiliens med fokus på ledningsgrupper och styrelser. Har byggt Avertum Group och genererat 1,8 MSEK i omsättning under expansion mot nordisk industri och infrastruktur. Kombinerar riskstyrning, affärsutveckling och exekutiv rapportering i komplexa B2B-miljöer.</p>
-  </div>
-  
-  <h2>Nyckelkompetenser</h2>
-  <ul class="cv-bullets compact-list">
-    <li>NIS2, DORA, GDPR, EU AI Act, ISO 27001 (orientering)</li>
-    <li>ICT-risk, leverantörsrisk och operationell resiliens</li>
-    <li>GAP-analys, kontrolldesign och åtgärdsplanering</li>
-    <li>Incident Response, playbooks och revisionsunderlag</li>
-    <li>Styrelse- och C-level-rådgivning</li>
-    <li>Riskkommunikation och rådgivning i reglerad miljö</li>
-    <li>Enterprise sales, KAM och stakeholder management</li>
-  </ul>
-  
-  <h2>Arbetslivserfarenhet</h2>
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">Grundare &amp; Senior GRC-konsult</span>
-      <span class="exp-dates">01/2022 &ndash; pågående</span>
+
+    <button class="print-btn no-print" onclick="window.print()">Skriv ut / Spara som PDF</button>
+
+    <h2>Profil</h2>
+    <div class="summary">
+      <p>Senior GRC- och compliancekonsult med 15+ års erfarenhet från finansiella tjänster, kritisk infrastruktur och andra reglerade verksamheter. Van att stödja ledning och beslutsfattare i frågor som rör regulatorisk efterlevnad, riskbedömning, kontrolldesign, leverantörsrisk och kontinuitetsarbete. Kombinerar affärsförståelse med strukturerat styrnings- och riskarbete samt erfarenhet av att ta fram granskningsunderlag, åtgärdsplaner och ledningsrapportering. Färdigutbildad inom cybersäkerhet och skydd av digitala tillgångar, med VG i samtliga kurser.</p>
     </div>
-    <div class="exp-company">Avertum Group AB &nbsp;&nbsp; Göteborg, Sverige</div>
-    <p class="exp-context">Specialiserad rådgivningsfirma inom cyber/GRC, operationell resiliens och strategisk risk för SME och aktörer inom kritisk infrastruktur.</p>
-    <ul class="cv-bullets">
-      <li>Leder GRC-uppdrag för SME och aktörer inom kritisk infrastruktur med fokus på NIS2, DORA, ICT-risk, leverantörsrisk och operationell resiliens.</li>
-      <li><strong>Resultat:</strong> Genererade 1,8 MSEK i omsättning under riktad expansion mot nordisk industri och infrastruktur.</li>
-      <li>Genomförde GAP-analys och ICT-riskbedömning för industribolag, vilket resulterade i ett revisionsklart åtgärdspaket för supply chain security förankrat i styrelsen.</li>
-      <li>Utvecklade Incident Response playbooks, leverantörsriskramverk och compliance-underlag som stödde godkänd revision.</li>
-      <li>Agerar som virtuell CISO / Compliance Officer för återkommande kunder och säkerställer kontinuitet mellan uppdrag.</li>
+
+    <h2>Kärnkompetenser</h2>
+    <ul class="cv-bullets compact-list">
+      <li>GRC, intern styrning och kontroll</li>
+      <li>Compliance och regulatorisk efterlevnad</li>
+      <li>NIS2, DORA, GDPR och EU AI Act</li>
+      <li>Riskbedömning, gap-analys och åtgärdsplaner</li>
+      <li>ICT-risk, leverantörsrisk och tredjepartsrisk</li>
+      <li>Kontrolldesign och granskningsunderlag</li>
+      <li>Rutiner för incidenthantering</li>
+      <li>Kontinuitetsarbete och beredskap</li>
+      <li>Ledningsrapportering och beslutsstöd</li>
+      <li>Intressenthantering på lednings- och styrelsenivå</li>
     </ul>
-  </div>
-  
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">Frilanskonsult – Rådgivning &amp; Affärsutveckling</span>
-      <span class="exp-dates">01/2020 &ndash; 12/2021</span>
+
+    <h2>Arbetslivserfarenhet</h2>
+
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Grundare och senior GRC-konsult</span>
+        <span class="exp-dates">2022 &ndash; pågående</span>
+      </div>
+      <div class="exp-company">Avertum Group AB, Göteborg</div>
+      <ul class="cv-bullets">
+        <li>Leder GRC- och complianceuppdrag för kunder med höga krav på styrning, driftsäkerhet och kontinuitet.</li>
+        <li>Genomför riskbedömningar, gap-analyser, kontrolldesign och ledningsrapportering utifrån NIS2, DORA och GDPR.</li>
+        <li>Genomförde gap-analys och ICT-riskbedömning för industribolag, vilket resulterade i ett revisionsklart åtgärdspaket för supply chain security förankrat i styrelsen.</li>
+        <li>Tog fram rutiner för incidenthantering, ramverk för leverantörsrisk och complianceunderlag som bidrog till godkänd revision hos kund.</li>
+        <li>Agerar som virtuell CISO och compliancefunktion för utvalda återkommande kunder.</li>
+        <li>Genererade 1,8 MSEK i omsättning under en expansionsfas mot nordisk infrastruktur och industri.</li>
+      </ul>
     </div>
-    <div class="exp-company">Egenföretagare &nbsp;&nbsp; Sverige</div>
-    <ul class="cv-bullets">
-      <li>Bedrev rådgivning och affärsutveckling för SME-kunder inom finans och teknik.</li>
-      <li>Byggde fördjupad kunskap inom regulatorisk risk, compliance-ramverk och affärsnära riskrådgivning inför formell GRC-specialisering.</li>
+
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Frilanskonsult inom rådgivning och affärsutveckling</span>
+        <span class="exp-dates">2020 &ndash; 2022</span>
+      </div>
+      <div class="exp-company">Egenföretagare, Sverige</div>
+      <ul class="cv-bullets">
+        <li>Rådgav SME-kunder inom finans och teknik i affärsutveckling, kundbearbetning och strukturering av erbjudanden.</li>
+        <li>Fördjupade kunskapen inom regulatorisk risk, compliance och styrningsfrågor inför specialisering inom GRC.</li>
+      </ul>
+    </div>
+
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Key Account Manager</span>
+        <span class="exp-dates">2018 &ndash; 2020</span>
+      </div>
+      <div class="exp-company">Göteborg Energi, Göteborg</div>
+      <ul class="cv-bullets">
+        <li>Ansvarade för strategiska nyckelkunder inom fastighet och industri i en verksamhet med samhällskritisk infrastruktur.</li>
+        <li>Ledde komplexa kunddialoger och förhandlingar med flera beslutsfattare kring långsiktiga lösningar och avtal.</li>
+        <li>Arbetade konsultativt mot C-level och byggde långsiktiga relationer baserade på affärsmässig förståelse, tillit och struktur.</li>
+        <li>Hade portföljansvar, kundplaner och direkt resultatansvar.</li>
+      </ul>
+    </div>
+
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Investment Consultant</span>
+        <span class="exp-dates">2014 &ndash; 2016</span>
+      </div>
+      <div class="exp-company">Fisher Investments, London</div>
+      <ul class="cv-bullets">
+        <li>FCA-reglerad rådgivning till förmögna privatpersoner med höga krav på lämplighetsbedömning, dokumentation och regelefterlevnad.</li>
+        <li>Ansvarade för hela den rådgivande processen: prospektering, behovsanalys, riskdialog, portföljlämplighet och avslut.</li>
+        <li>Rankades i toppskiktet bland säljare inom den europeiska verksamheten.</li>
+        <li>Utvecklade stark förmåga inom riskkommunikation, förtroendeskapande och complianceorienterad rådgivning.</li>
+      </ul>
+    </div>
+
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Finansiell rådgivare och säljare</span>
+        <span class="exp-dates">2010 &ndash; 2014</span>
+      </div>
+      <div class="exp-company">Skandia, Sverige</div>
+      <ul class="cv-bullets">
+        <li>Arbetade med behovsbaserad rådgivning inom pension, försäkring och sparande i FI-reglerad miljö.</li>
+        <li>Byggde långsiktiga kundrelationer med fokus på riskkommunikation, produktlämplighet och förtroendefull rådgivning.</li>
+      </ul>
+    </div>
+
+    <h2>Utbildning</h2>
+
+    <div class="edu-entry">
+      <div class="edu-row">
+        <span class="edu-degree">Cybersäkerhet och skydd av digitala tillgångar</span>
+        <span class="edu-dates">2024 &ndash; 2026</span>
+      </div>
+      <div class="edu-school">XeDrix Institute of Higher Education, Göteborg <br> Avslutad 2026-05-31 · VG i samtliga kurser.</div>
+    </div>
+
+    <div class="edu-entry">
+      <div class="edu-row">
+        <span class="edu-degree">Magisterexamen i statsvetenskap och Science and Technology Studies (STS)</span>
+        <span class="edu-dates">2001 &ndash; 2006</span>
+      </div>
+      <div class="edu-school">Göteborgs universitet, Göteborg</div>
+    </div>
+
+    <h2>Kompetenser och verktyg</h2>
+    <ul class="cv-bullets compact-list">
+      <li><strong>Regulatoriskt:</strong> NIS2, DORA, GDPR, EU AI Act, ISO 27001 (orientering), MSB:s riktlinjer</li>
+      <li><strong>GRC och risk:</strong> riskbedömning, kontrollkartläggning, gap-analys, incidenthantering, kontinuitetsarbete</li>
+      <li><strong>Underrättelse och analys:</strong> OSINT, threat intelligence, leverantörs- och tredjepartsriskprofilering</li>
+      <li><strong>System och verktyg:</strong> Microsoft 365, Salesforce/CRM, Google Cloud Platform (GCP), Cloudflare</li>
+      <li><strong>Språk:</strong> svenska (modersmål), engelska (flytande)</li>
     </ul>
+
   </div>
-  
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">Key Account Manager (KAM)</span>
-      <span class="exp-dates">01/2018 &ndash; 12/2020</span>
-    </div>
-    <div class="exp-company">Göteborg Energi &nbsp;&nbsp; Göteborg, Sverige</div>
-    <p class="exp-context">Kommunägt energibolag och operatör av kritisk infrastruktur med 300 000+ kunder i Göteborgsregionen.</p>
-    <ul class="cv-bullets">
-      <li>Bar det kommersiella och strategiska ansvaret för en portfölj av industri- och fastighetskunder i en miljö präglad av kritisk infrastruktur.</li>
-      <li>Drev förhandlingar kring långsiktiga infrastrukturavtal med tydligt resultatansvar och påverkan på affärsrelationer och intäkter.</li>
-      <li>Agerade strategisk rådgivare på C-level i frågor som rörde affärsrisk och energiförsörjning.</li>
-    </ul>
-  </div>
-  
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">Investment Consultant</span>
-      <span class="exp-dates">01/2014 &ndash; 12/2016</span>
-    </div>
-    <div class="exp-company">Fisher Investments &nbsp;&nbsp; London, Storbritannien</div>
-    <p class="exp-context">Global kapitalförvaltare med USD 200md+ AUM; strikt FCA-reglerad miljö med fokus på HNWI-kunder.</p>
-    <ul class="cv-bullets">
-      <li>Arbetade i en strikt FCA-reglerad miljö med fokus på HNWI-kunder och komplex kapitalförvaltningsrådgivning.</li>
-      <li>Presterade i toppskiktet av den europeiska säljkåren genom stark finansiell riskkommunikation och förtroendebaserad rådgivning.</li>
-      <li>Ägde hela den rådgivande säljcykeln, från strategisk prospektering och bedömning av portföljlämplighet till exekutivt avslut under strikt compliance.</li>
-    </ul>
-  </div>
-  
-  <div class="exp-entry">
-    <div class="exp-header">
-      <span class="exp-role">Finansiell rådgivare &amp; Säljare</span>
-      <span class="exp-dates">01/2010 &ndash; 12/2014</span>
-    </div>
-    <div class="exp-company">Skandia &nbsp;&nbsp; Sverige</div>
-    <p class="exp-context">Ledande nordisk liv- och kapitalförvaltningsgrupp; FI-reglerad miljö.</p>
-    <ul class="cv-bullets">
-      <li>Bedrev behovsbaserad rådgivning inom försäkring, pension och sparande i FI-reglerad miljö.</li>
-      <li>Byggde långsiktiga kundrelationer med fokus på finansiell riskkommunikation, produktlämplighet och förtroendebaserad rådgivning.</li>
-    </ul>
-  </div>
-  
-  <h2>Utbildning</h2>
-  <div class="edu-entry">
-    <div class="edu-row">
-      <span class="edu-degree">Cybersäkerhet och skydd av digitala tillgångar</span>
-      <span class="edu-dates">08/2024 &ndash; 05/2026</span>
-    </div>
-    <div class="edu-school">XeDrix Institute of Higher Education &nbsp;&nbsp; Göteborg &nbsp;&nbsp; Avslutad: 2026-05-31</div>
-  </div>
-  <div class="edu-entry">
-    <div class="edu-row">
-      <span class="edu-degree">Magisterexamen i Statsvetenskap &amp; Science and Technology Studies (STS)</span>
-      <span class="edu-dates">08/2001 &ndash; 06/2006</span>
-    </div>
-    <div class="edu-school">Göteborgs Universitet &nbsp;&nbsp; Göteborg</div>
-  </div>
-  
-  <h2>Färdigheter</h2>
-  <ul class="cv-bullets compact-list">
-    <li><strong>Regulatoriskt:</strong> NIS2, DORA, GDPR, EU AI Act, ISO 27001 (orientering), MSB:s riktlinjer</li>
-    <li><strong>GRC / Risk:</strong> Riskbedömning, kontrollkartläggning, GAP-analys, Incident Response, Business Continuity, leverantörsrisk</li>
-    <li><strong>Underrättelse:</strong> OSINT, Threat Intelligence, tredjeparts- och leverantörsriskprofilering</li>
-    <li><strong>Teknologi:</strong> Microsoft 365, Salesforce / CRM, Google Cloud Platform (GCP), Cloudflare</li>
-    <li><strong>Språk:</strong> Svenska (modersmål), Engelska (flytande)</li>
-  </ul>
-</div>
 </body>
 </html>
