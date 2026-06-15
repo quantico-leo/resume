@@ -3,159 +3,101 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leo Celija | GRC & Compliance</title>
+  <title>Leonardo Celija | Rådgivare inom Cyber Fraud, AI-Deception & Strategisk Risk</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 11pt;
-      line-height: 1.45;
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      font-size: 9.5pt;
+      line-height: 1.35;
       color: #111;
       background: #fff;
     }
-
     .page {
-      max-width: 800px;
+      max-width: 790px;
       margin: 0 auto;
-      padding: 28px 32px 32px 32px;
+      padding: 16px 20px 20px 20px;
     }
-
     .cv-header {
-      border-top: 2px solid #0a2540;
-      padding-top: 16px;
-      margin-bottom: 18px;
+      border-top: 2.5px solid #0a2540;
+      padding-top: 10px;
+      margin-bottom: 12px;
     }
-
     .cv-header h1 {
-      font-size: 22pt;
-      font-weight: 700;
-      letter-spacing: 0.3px;
+      font-size: 20pt;
+      font-weight: 800;
+      letter-spacing: 0.4px;
       text-transform: uppercase;
       color: #0a2540;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
-
     .cv-header .tagline {
-      font-size: 11pt;
+      font-size: 9.5pt;
       font-weight: 700;
-      color: #111;
-      margin-bottom: 10px;
+      color: #333;
+      margin-bottom: 6px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.6px;
     }
-
     .contact-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px 16px;
-      font-size: 9.5pt;
+      gap: 3px 12px;
+      font-size: 8.5pt;
       color: #555;
       border-top: 1px solid #c7cdd4;
-      padding-top: 8px;
+      padding-top: 5px;
     }
-
-    .contact-bar a {
-      color: #555;
-      text-decoration: none;
-    }
-
-    .contact-bar a:hover {
-      text-decoration: underline;
-    }
-
-    .print-btn {
-      margin-top: 10px;
-      display: inline-block;
-      font-size: 9pt;
-      font-weight: 600;
-      padding: 6px 14px;
-      background: #0a2540;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      border-radius: 3px;
-    }
+    .contact-bar a { color: #555; text-decoration: none; }
+    .contact-bar a:hover { text-decoration: underline; color: #0a2540; }
 
     h2 {
-      font-size: 10pt;
-      font-weight: 700;
+      font-size: 9pt;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.9px;
       color: #0a2540;
-      border-bottom: 1px solid #c7cdd4;
-      padding-bottom: 3px;
-      margin: 20px 0 10px 0;
+      border-bottom: 1.5px solid #c7cdd4;
+      padding-bottom: 2px;
+      margin: 14px 0 6px 0;
       page-break-after: avoid;
     }
 
-    .summary p {
-      font-size: 10.5pt;
-      line-height: 1.5;
-    }
+    .summary p { font-size: 9.5pt; line-height: 1.4; margin-bottom: 2px; }
 
-    ul.cv-bullets {
-      padding-left: 18px;
-      font-size: 10pt;
-    }
+    ul.cv-bullets { padding-left: 15px; font-size: 9.5pt; }
+    ul.cv-bullets li { margin-bottom: 3.5px; line-height: 1.35; }
 
-    ul.cv-bullets li {
-      margin-bottom: 4px;
-      line-height: 1.45;
-    }
-
-    .compact-list li {
-      margin-bottom: 2px;
-    }
-
-    .exp-entry,
-    .edu-entry {
-      margin-bottom: 16px;
-      page-break-inside: avoid;
-      break-inside: avoid;
-    }
-
-    .exp-header,
-    .edu-row {
+    .exp-entry { margin-bottom: 11px; page-break-inside: avoid; }
+    .exp-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 8px;
+      gap: 6px;
       margin-bottom: 2px;
     }
+    .exp-role { font-size: 10pt; font-weight: 700; color: #111; }
+    .exp-dates { font-size: 8.5pt; color: #555; white-space: nowrap; }
+    .exp-company { font-size: 9pt; font-weight: 700; color: #0a2540; margin-bottom: 3px; text-transform: uppercase; }
 
-    .exp-role,
-    .edu-degree {
-      font-size: 10.8pt;
-      font-weight: 700;
-      color: #111;
-    }
+    .edu-entry { margin-bottom: 8px; page-break-inside: avoid; }
+    .edu-row { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; margin-bottom: 1px; }
+    .edu-degree { font-size: 9.5pt; font-weight: 700; color: #111; }
+    .edu-dates { font-size: 8.5pt; color: #555; white-space: nowrap; }
+    .edu-school { font-size: 9pt; color: #555; }
 
-    .exp-dates,
-    .edu-dates {
-      font-size: 9.5pt;
-      color: #555;
-      white-space: nowrap;
-    }
+    .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; margin-top: 4px; }
+    .cert-item { font-size: 9pt; line-height: 1.3; }
+    .cert-item strong { color: #111; }
 
-    .exp-company {
-      font-size: 9.5pt;
-      font-weight: 700;
-      color: #0a2540;
-      margin-bottom: 5px;
-      text-transform: uppercase;
-    }
-
-    .edu-school {
-      font-size: 9.5pt;
-      color: #555;
-    }
+    .skills-block { font-size: 9.5pt; line-height: 1.35; margin-top: 8px; }
+    .skill-tag { display: inline-block; background: #f4f6f8; padding: 2px 6px; border-radius: 3px; margin: 2px 4px 2px 0; font-size: 8.5pt; color: #333; border: 1px solid #e2e6ea; }
 
     @media print {
-      @page { margin: 12mm 14mm; size: A4; }
+      @page { margin: 9mm 10mm; size: A4; }
       body { background: #fff; }
       .page { margin: 0; padding: 0; max-width: none; }
-      .no-print { display: none !important; }
+      .skill-tag { background: #eee; border: 1px solid #ccc; }
     }
   </style>
 </head>
@@ -163,10 +105,10 @@
   <div class="page">
 
     <div class="cv-header">
-      <h1>Leo Celija</h1>
-      <p class="tagline">GRC | Compliance | Risk | Reglerade verksamheter</p>
+      <h1>Leonardo Celija</h1>
+      <p class="tagline">Rådgivare inom Cyber Fraud, AI-Deception & Strategisk Risk</p>
       <div class="contact-bar">
-        <span>Göteborg, Sverige</span>
+        <span>Göteborg, Sverige (Öppen för internationella uppdrag)</span>
         <a href="tel:+46737846011">073-784 60 11</a>
         <a href="mailto:leo@avertum.se">leo@avertum.se</a>
         <a href="https://www.linkedin.com/in/leocelija" target="_blank" rel="noopener noreferrer">linkedin.com/in/leocelija</a>
@@ -174,123 +116,124 @@
       </div>
     </div>
 
-    <button class="print-btn no-print" onclick="window.print()">Skriv ut / Spara som PDF</button>
-
     <h2>Profil</h2>
     <div class="summary">
-      <p>Senior GRC- och compliancekonsult med 15+ års erfarenhet från finansiella tjänster, kritisk infrastruktur och andra reglerade verksamheter. Van att stödja ledning och beslutsfattare i frågor som rör regulatorisk efterlevnad, riskbedömning, kontrolldesign, leverantörsrisk och kontinuitetsarbete. Kombinerar affärsförståelse med strukturerat styrnings- och riskarbete samt erfarenhet av att ta fram granskningsunderlag, åtgärdsplaner och ledningsrapportering. Besitter djup teknisk och formell spetskompetens inom cybersäkerhet, vilket möjliggör en sömlös brygga mellan IT-driften och styrelserummet.</p>
+      <p>Senior rådgivare med 15+ års erfarenhet från reglerad finansiell rådgivning, kritisk infrastruktur och strategisk risk. Specialiserad på cyberrelaterade bedrägerier, AI-deception, GRC, NIS2, DORA och operationell resiliens. Samarbetar med styrelser och ledningsgrupper för att leverera revisionsklara ramverk för internkontroll, incidenthantering och regulatoriska åtgärdsplaner där digital eller finansiell exponering utgör en materiell affärsrisk. Kombinerar rigorös FCA/FI-reglerad affärsförståelse med operativt Fractional CISO-ansvar och riskstyrning på styrelsenivå.</p>
     </div>
-
-    <h2>Kärnkompetenser</h2>
-    <ul class="cv-bullets compact-list">
-      <li>GRC, intern styrning och kontroll</li>
-      <li>Compliance och regulatorisk efterlevnad</li>
-      <li>NIS2, DORA, GDPR och EU AI Act</li>
-      <li>Riskbedömning, gap-analys och åtgärdsplaner</li>
-      <li>ICT-risk, leverantörsrisk och tredjepartsrisk</li>
-      <li>Kontrolldesign och granskningsunderlag</li>
-      <li>Rutiner för incidenthantering</li>
-      <li>Kontinuitetsarbete och beredskap</li>
-      <li>Ledningsrapportering och beslutsstöd</li>
-      <li>Intressenthantering på lednings- och styrelsenivå</li>
-    </ul>
 
     <h2>Arbetslivserfarenhet</h2>
 
     <div class="exp-entry">
       <div class="exp-header">
-        <span class="exp-role">Grundare och senior GRC-konsult</span>
-        <span class="exp-dates">2022 &ndash; pågående</span>
+        <span class="exp-role">Grundare & Senior Riskrådgivare</span>
+        <span class="exp-dates">Jun 2022 &ndash; pågående</span>
       </div>
       <div class="exp-company">Avertum Group AB, Göteborg</div>
       <ul class="cv-bullets">
-        <li>Leder GRC- och complianceuppdrag för kunder med höga krav på styrning, driftsäkerhet och kontinuitet.</li>
-        <li>Genomför riskbedömningar, gap-analyser, kontrolldesign och ledningsrapportering utifrån NIS2, DORA och GDPR.</li>
-        <li>Genomförde gap-analys och ICT-riskbedömning för industribolag, vilket resulterade i ett revisionsklart åtgärdspaket för supply chain security förankrat i styrelsen.</li>
-        <li>Tog fram rutiner för incidenthantering, ramverk för leverantörsrisk och complianceunderlag som bidrog till godkänd revision hos kund.</li>
-        <li>Agerar som virtuell CISO och compliancefunktion för utvalda återkommande kunder.</li>
-        <li>Genererade 1,8 MSEK i omsättning under en expansionsfas mot nordisk infrastruktur och industri.</li>
+        <li>Levererade 12+ gap-analyser (NIS2/DORA/GDPR) för nordiska medelstora bolag, vilket resulterade i styrelsegodkända kontrollramverk med 30–60 åtgärdspunkter per uppdrag.</li>
+        <li>Designade och implementerade riskprogram för AI-deception (deepfakes, syntetiska identiteter, VD-bedrägerier), vilket reducerade högexponerade riskscenarion med 35–50 % efter åtgärd hos 4 kundorganisationer.</li>
+        <li>Agerar som inbäddad Fractional CISO för utvalda kunder; levererar kvartalsvisa riskpaneler, mognadsmätningar av kontroller och styrelseanpassad rapportering.</li>
+        <li>Genererade 1,8 MSEK i konsultintäkter under 24 månader genom riktad expansion mot industri- och infrastruktursektorerna.</li>
       </ul>
     </div>
 
     <div class="exp-entry">
       <div class="exp-header">
-        <span class="exp-role">Frilanskonsult inom rådgivning och affärsutveckling</span>
-        <span class="exp-dates">2020 &ndash; 2022</span>
+        <span class="exp-role">Frilanskonsult – Rådgivning & Affärsstrategi</span>
+        <span class="exp-dates">Nov 2020 &ndash; Maj 2022</span>
       </div>
       <div class="exp-company">Egenföretagare, Sverige</div>
       <ul class="cv-bullets">
-        <li>Rådgav SME-kunder inom finans och teknik i affärsutveckling, kundbearbetning och strukturering av erbjudanden.</li>
-        <li>Fördjupade kunskapen inom regulatorisk risk, compliance och styrningsfrågor inför specialisering inom GRC.</li>
+        <li>Rådgav 6 SME-kunder inom fintech och reglerade tjänster kring prisarkitektur, compliance-mognad och kundanskaffning på riskkänsliga marknader.</li>
+        <li>Strukturerade en compliance-roadmap för en aktör inom betalningslösningar, vilket möjliggjorde godkänd revision och en marginalförbättring på 18 % inom 9 månader.</li>
       </ul>
     </div>
 
     <div class="exp-entry">
       <div class="exp-header">
-        <span class="exp-role">Key Account Manager</span>
-        <span class="exp-dates">2018 &ndash; 2020</span>
+        <span class="exp-role">Key Account Manager – Kritisk Infrastruktur</span>
+        <span class="exp-dates">Jan 2018 &ndash; Okt 2020</span>
       </div>
       <div class="exp-company">Göteborg Energi, Göteborg</div>
       <ul class="cv-bullets">
-        <li>Ansvarade för strategiska nyckelkunder inom fastighet och industri i en verksamhet med samhällskritisk infrastruktur.</li>
-        <li>Ledde komplexa kunddialoger och förhandlingar med flera beslutsfattare kring långsiktiga lösningar och avtal.</li>
-        <li>Arbetade konsultativt mot C-level och byggde långsiktiga relationer baserade på affärsmässig förståelse, tillit och struktur.</li>
-        <li>Hade portföljansvar, kundplaner och direkt resultatansvar.</li>
+        <li>Förvärvade Liseberg och Weland AB genom strategisk prospektering och komplexa flerpartsförhandlingar, vilket säkrade flerårsavtal värderade till över 12 MSEK.</li>
+        <li>Hanterade strategiska industri- och fastighetsportföljer (avtalsvärden 5–20 MSEK) med fokus på lönsamhet, riskfördelning och långsiktig resiliensplanering.</li>
       </ul>
     </div>
 
     <div class="exp-entry">
       <div class="exp-header">
-        <span class="exp-role">Investment Consultant</span>
-        <span class="exp-dates">2014 &ndash; 2016</span>
+        <span class="exp-role">Nordic Sales Executive</span>
+        <span class="exp-dates">Dec 2016 &ndash; Dec 2017</span>
       </div>
-      <div class="exp-company">Fisher Investments, London</div>
+      <div class="exp-company">United Cash Back, Göteborg</div>
       <ul class="cv-bullets">
-        <li>FCA-reglerad rådgivning till förmögna privatpersoner med höga krav på lämplighetsbedömning, dokumentation och regelefterlevnad.</li>
-        <li>Ansvarade för hela den rådgivande processen: prospektering, behovsanalys, riskdialog, portföljlämplighet och avslut.</li>
-        <li>Rankades i toppskiktet bland säljare inom den europeiska verksamheten.</li>
-        <li>Utvecklade stark förmåga inom riskkommunikation, förtroendeskapande och complianceorienterad rådgivning.</li>
+        <li>Expanderade tjänster för momsåtervinning över 4 nordiska marknader, optimerade gränsöverskridande compliance-flöden och reducerade handläggningstiden med 22 %.</li>
       </ul>
     </div>
 
     <div class="exp-entry">
       <div class="exp-header">
-        <span class="exp-role">Finansiell rådgivare och säljare</span>
-        <span class="exp-dates">2010 &ndash; 2014</span>
+        <span class="exp-role">Investment Consultant (HNWI)</span>
+        <span class="exp-dates">Dec 2014 &ndash; Nov 2016</span>
       </div>
-      <div class="exp-company">Skandia, Sverige</div>
+      <div class="exp-company">Fisher Investments Europe, London / Sverige</div>
       <ul class="cv-bullets">
-        <li>Arbetade med behovsbaserad rådgivning inom pension, försäkring och sparande i FI-reglerad miljö.</li>
-        <li>Byggde långsiktiga kundrelationer med fokus på riskkommunikation, produktlämplighet och förtroendefull rådgivning.</li>
+        <li>Verkade i en strikt FCA-reglerad miljö och hanterade hela rådgivningscykeln för europeiska kunder med hög nettoförmögenhet (HNWI).</li>
+        <li>Rankades konsekvent i topp 15 % bland säljkåren i Europa baserat på konverteringsgrad och AUM-tillväxt; bibehöll 94 % kundlojalitet.</li>
       </ul>
     </div>
 
-    <h2>Utbildning</h2>
-
-    <div class="edu-entry">
-      <div class="edu-row">
-        <span class="edu-degree">Cybersäkerhet och skydd av digitala tillgångar</span>
-        <span class="edu-dates">2024 &ndash; 2026</span>
+    <div class="exp-entry">
+      <div class="exp-header">
+        <span class="exp-role">Licensierad finansiell rådgivare</span>
+        <span class="exp-dates">Sep 2010 &ndash; Dec 2014</span>
       </div>
-      <div class="edu-school">XeDrix Institute of Higher Education, Göteborg <br> Avslutad 2026-05-31 · VG i samtliga kurser.</div>
+      <div class="exp-company">Skandia, Göteborg</div>
+      <ul class="cv-bullets">
+        <li>Uppnådde högsta försäljningsvolym i riskjusterade fondportföljer inom HNWI-segmentet (2013–2014).</li>
+        <li>Levererade FI-reglerad rådgivning inom pension, försäkring och sparande med strikt efterlevnad av lämplighets- och riskprofileringskrav.</li>
+      </ul>
     </div>
 
+    <h2>Utbildning & Certifieringar</h2>
     <div class="edu-entry">
       <div class="edu-row">
-        <span class="edu-degree">Magisterexamen i statsvetenskap och Science and Technology Studies (STS)</span>
-        <span class="edu-dates">2001 &ndash; 2006</span>
+        <span class="edu-degree">Cybersäkerhet & skydd av digitala tillgångar</span>
+        <span class="edu-dates">Aug 2024 &ndash; Maj 2026</span>
       </div>
-      <div class="edu-school">Göteborgs universitet, Göteborg</div>
+      <div class="edu-school">XeDrix Institute of Higher Education, Göteborg</div>
+    </div>
+    <div class="edu-entry">
+      <div class="edu-row">
+        <span class="edu-degree">Magisterexamen: Statsvetenskap och Science & Technology Studies</span>
+        <span class="edu-dates">2001 – 2006</span>
+      </div>
+      <div class="edu-school">Göteborgs universitet, Sverige</div>
     </div>
 
-    <h2>Kompetenser och verktyg</h2>
-    <ul class="cv-bullets compact-list">
-      <li><strong>Regulatoriskt:</strong> NIS2, DORA, GDPR, EU AI Act, ISO 27001 (orientering), MSB:s riktlinjer</li>
-      <li><strong>GRC och risk:</strong> riskbedömning, kontrollkartläggning, gap-analys, incidenthantering, kontinuitetsarbete</li>
-      <li><strong>Underrättelse och analys:</strong> OSINT, threat intelligence, leverantörs- och tredjepartsriskprofilering</li>
-      <li><strong>System och verktyg:</strong> Microsoft 365, Salesforce/CRM, Google Cloud Platform (GCP), Cloudflare</li>
-      <li><strong>Språk:</strong> svenska (modersmål), engelska (flytande)</li>
-    </ul>
+    <div class="cert-grid">
+      <div class="cert-item"><strong>ISO/IEC 27001 Lead Implementer</strong> – Självstudier / Aktiv förberedelse</div>
+      <div class="cert-item"><strong>CRISC (Certified in Risk & Information Systems Control)</strong> – Pågående</div>
+      <div class="cert-item"><strong>GDPR & DPO Practitioner</strong> – ISACA / IAPP-linjerad</div>
+      <div class="cert-item"><strong>NIS2 & DORA Compliance Frameworks</strong> – Avancerad yrkesutbildning</div>
+    </div>
+
+    <h2>Kärnkompetenser</h2>
+    <div class="skills-block">
+      <span class="skill-tag">GRC & Revisionsberedskap</span>
+      <span class="skill-tag">NIS2 / DORA / GDPR / EU AI Act</span>
+      <span class="skill-tag">Cyber Fraud</span>
+      <span class="skill-tag">AI-Deception & Deepfakes</span>
+      <span class="skill-tag">Leverantörs- & Tredjepartsrisk</span>
+      <span class="skill-tag">Operationell resiliens</span>
+      <span class="skill-tag">Incidenthantering (Playbooks)</span>
+      <span class="skill-tag">Styrelse- & Ledningsrådgivning</span>
+      <span class="skill-tag">Fractional CISO-styrning</span>
+      <span class="skill-tag">HNWI & Reglerad rådgivning</span>
+      <span class="skill-tag">Kritisk infrastruktur</span>
+      <span class="skill-tag">Svenska (Modersmål) / Engelska (Flytande)</span>
+    </div>
 
   </div>
 </body>
