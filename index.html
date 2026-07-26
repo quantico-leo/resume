@@ -1,233 +1,470 @@
 <!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leonardo Celija | Affärsutveckling, Cybersäkerhet & Riskrådgivning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leonardo Celija - grundare, affärsutvecklare och kommersiell rådgivare för reglerade B2B-marknader.">
+  <title>Leonardo Celija | Svenskt CV</title>
+
   <style>
+    :root {
+      --ink: #111827;
+      --navy: #0a2540;
+      --muted: #5f6b7a;
+      --line: #d6dde6;
+      --soft: #f4f6f8;
+      --gold: #a47716;
+    }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { background: #eef1f5; }
+
     body {
-      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-      font-size: 9.5pt;
-      line-height: 1.35;
-      color: #111;
       background: #fff;
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: 8.8pt;
+      line-height: 1.31;
     }
-    .page {
-      max-width: 790px;
-      margin: 0 auto;
-      padding: 16px 20px 20px 20px;
+
+    a { color: inherit; text-decoration: none; }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 16px auto;
+      padding: 9mm 11mm 8mm;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(15, 23, 42, 0.12);
     }
-    .cv-header {
-      border-top: 2.5px solid #0a2540;
-      padding-top: 10px;
-      margin-bottom: 12px;
+
+    .sheet + .sheet { page-break-before: always; }
+
+    header {
+      border-top: 3px solid var(--navy);
+      padding-top: 7px;
+      margin-bottom: 8px;
     }
-    .cv-header h1 {
+
+    h1 {
+      color: var(--navy);
       font-size: 20pt;
+      line-height: 1;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .tagline {
+      color: #26384d;
+      font-size: 8.9pt;
       font-weight: 800;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.38px;
+      line-height: 1.25;
       text-transform: uppercase;
-      color: #0a2540;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
     }
-    .cv-header .tagline {
-      font-size: 9.5pt;
+
+    .availability {
+      color: var(--gold);
+      font-size: 8.3pt;
       font-weight: 700;
-      color: #333;
-      margin-bottom: 6px;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
+      margin-bottom: 5px;
     }
-    .contact-bar {
+
+    .contact {
       display: flex;
       flex-wrap: wrap;
-      gap: 3px 12px;
-      font-size: 8.5pt;
-      color: #555;
-      border-top: 1px solid #c7cdd4;
-      padding-top: 5px;
+      gap: 2px 10px;
+      border-top: 1px solid var(--line);
+      padding-top: 4px;
+      color: var(--muted);
+      font-size: 7.7pt;
     }
-    .contact-bar a { color: #555; text-decoration: none; }
-    .contact-bar a:hover { text-decoration: underline; color: #0a2540; }
+
     h2 {
-      font-size: 9pt;
+      color: var(--navy);
+      font-size: 8.5pt;
       font-weight: 800;
+      letter-spacing: 0.85px;
       text-transform: uppercase;
-      letter-spacing: 0.9px;
-      color: #0a2540;
-      border-bottom: 1.5px solid #c7cdd4;
+      border-bottom: 1.3px solid var(--line);
       padding-bottom: 2px;
-      margin: 14px 0 6px 0;
+      margin: 9px 0 4px;
       page-break-after: avoid;
     }
-    .summary p { font-size: 9.5pt; line-height: 1.4; margin-bottom: 2px; }
-    ul.cv-bullets { padding-left: 15px; font-size: 9.5pt; }
-    ul.cv-bullets li { margin-bottom: 3.5px; line-height: 1.35; }
-    .exp-entry { margin-bottom: 11px; page-break-inside: avoid; }
-    .exp-header {
+
+    .profile {
+      font-size: 8.8pt;
+      line-height: 1.35;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      margin-top: 6px;
+    }
+
+    .metric {
+      padding: 5px 6px;
+      background: var(--soft);
+      border-left: 2.5px solid var(--navy);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--navy);
+      font-size: 10.5pt;
+      line-height: 1.05;
+      margin-bottom: 1px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 6.9pt;
+      line-height: 1.18;
+      text-transform: uppercase;
+      letter-spacing: 0.15px;
+    }
+
+    .focus {
+      color: #2f3f52;
+      font-size: 8.25pt;
+      line-height: 1.32;
+    }
+
+    .focus strong { color: var(--navy); }
+
+    .entry {
+      margin-bottom: 7px;
+      page-break-inside: avoid;
+    }
+
+    .entry-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 6px;
+      gap: 8px;
+      margin-bottom: 1px;
+    }
+
+    .role {
+      font-size: 9.05pt;
+      font-weight: 800;
+    }
+
+    .dates {
+      color: var(--muted);
+      font-size: 7.45pt;
+      white-space: nowrap;
+    }
+
+    .company {
+      color: var(--navy);
+      font-size: 8.05pt;
+      font-weight: 800;
+      text-transform: uppercase;
       margin-bottom: 2px;
     }
-    .exp-role { font-size: 10pt; font-weight: 700; color: #111; }
-    .exp-dates { font-size: 8.5pt; color: #555; white-space: nowrap; }
-    .exp-company { font-size: 9pt; font-weight: 700; color: #0a2540; margin-bottom: 3px; text-transform: uppercase; }
-    .edu-entry { margin-bottom: 8px; page-break-inside: avoid; }
-    .edu-row { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; margin-bottom: 1px; }
-    .edu-degree { font-size: 9.5pt; font-weight: 700; color: #111; }
-    .edu-dates { font-size: 8.5pt; color: #555; white-space: nowrap; }
-    .edu-school { font-size: 9pt; color: #555; }
-    .edu-sub { font-size: 8.5pt; color: #777; font-style: italic; margin-top: 2px; }
-    .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; margin-top: 4px; }
-    .cert-item { font-size: 9pt; line-height: 1.3; }
-    .cert-item strong { color: #111; }
-    .skills-block { font-size: 9.5pt; line-height: 1.35; margin-top: 8px; }
-    .skill-tag { display: inline-block; background: #f4f6f8; padding: 2px 6px; border-radius: 3px; margin: 2px 4px 2px 0; font-size: 8.5pt; color: #333; border: 1px solid #e2e6ea; }
+
+    .subhead {
+      color: var(--gold);
+      font-size: 7.25pt;
+      font-weight: 800;
+      letter-spacing: 0.45px;
+      text-transform: uppercase;
+      margin: 3px 0 1px;
+    }
+
+    ul {
+      padding-left: 13px;
+      font-size: 8.35pt;
+    }
+
+    li {
+      margin-bottom: 1.8px;
+      line-height: 1.29;
+    }
+
+    .education {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+
+    .edu {
+      page-break-inside: avoid;
+    }
+
+    .edu-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .degree {
+      font-size: 8.75pt;
+      font-weight: 800;
+    }
+
+    .school {
+      color: var(--muted);
+      font-size: 7.9pt;
+      margin-top: 1px;
+    }
+
+    .development {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 10px;
+      font-size: 8pt;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+
+    .skill {
+      padding: 1.5px 5px;
+      border: 1px solid #dde3e9;
+      border-radius: 3px;
+      background: var(--soft);
+      color: #344054;
+      font-size: 7.45pt;
+    }
+
+    .page-two-title {
+      color: var(--navy);
+      font-size: 8.2pt;
+      font-weight: 700;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 4px;
+      margin-bottom: 7px;
+      text-align: right;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
     @media print {
-      @page { margin: 9mm 10mm; size: A4; }
-      body { background: #fff; }
-      .page { margin: 0; padding: 0; max-width: none; }
-      .skill-tag { background: #eee; border: 1px solid #ccc; }
+      html, body { background: #fff; }
+
+      .sheet {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 9mm 11mm 8mm;
+        box-shadow: none;
+        page-break-after: always;
+      }
+
+      .sheet:last-child { page-break-after: auto; }
+    }
+
+    @media screen and (max-width: 820px) {
+      html { background: #fff; }
+
+      .sheet {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 22px 17px;
+        box-shadow: none;
+      }
+
+      .metrics,
+      .development {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .entry-head,
+      .edu-head {
+        display: block;
+      }
+
+      .dates { display: block; margin-top: 1px; }
     }
   </style>
 </head>
+
 <body>
-  <div class="page">
-    <div class="cv-header">
+  <section class="sheet">
+    <header>
       <h1>Leonardo Celija</h1>
-      <p class="tagline">Affärsutveckling, Cybersäkerhet & Riskrådgivning | Högvärdig B2B-försäljning | Reglerade miljöer</p>
-      <div class="contact-bar">
-        <span>Göteborg, Sverige (Öppen för internationella uppdrag)</span>
+      <p class="tagline">Grundare & kommersiell rådgivare | Affärsutveckling, strategiska partnerskap och reglerade B2B-marknader</p>
+      <p class="availability">Öppen för utvalda konsult-, interim- och partneruppdrag via Avertum Group AB</p>
+      <div class="contact">
+        <span>Göteborg, Sverige · Öppen för internationella uppdrag</span>
         <a href="tel:+46737846011">073-784 60 11</a>
         <a href="mailto:leo@avertum.se">leo@avertum.se</a>
-        <a href="https://www.linkedin.com/in/leocelija" target="_blank" rel="noopener noreferrer">linkedin.com/in/leocelija</a>
-        <a href="https://www.avertum.se" target="_blank" rel="noopener noreferrer">avertum.se</a>
+        <a href="https://www.linkedin.com/in/leocelija">linkedin.com/in/leocelija</a>
+        <a href="https://www.avertum.se">avertum.se</a>
       </div>
-    </div>
+    </header>
 
     <h2>Profil</h2>
-    <div class="summary">
-      <p>Kommersiell och rådgivande profil med över 15 års erfarenhet från finansiella tjänster, kritisk infrastruktur, reglerade marknader och komplex B2B-försäljning. Kombinerar affärsutveckling, kundanskaffning och strategisk rådgivning med kompetens inom financial crime, cybersäkerhet, compliance och riskhantering. Grundare av Avertum Group AB med dokumenterad förmåga att skapa intäkter genom egen prospektering, navigera flerpartsaffärer och stötta beslutsfattare i miljöer där förtroende, precision och affärsnytta är avgörande. Passar för roller inom affärsutveckling, partnerskapsförsäljning, strategisk rådgivning, cyberrelaterade tjänster och high ticket B2B-försäljning.</p>
+    <p class="profile">
+      Grundare, affärsutvecklare och kommersiell rådgivare med över 15 års erfarenhet från finansiella tjänster,
+      kritisk infrastruktur, internationell försäljning och reglerade B2B-miljöer. Dokumenterad förmåga att skapa
+      egen pipeline, vinna komplexa affärer, bygga långsiktiga kundrelationer och stödja beslutsfattare när risk,
+      förtroende och kommersiella konsekvenser är tätt sammanlänkade. Bygger Avertum Group AB och tar utvalda
+      uppdrag inom enterprise growth, strategiska partnerskap, marknadsinträde och kommersiell positionering.
+    </p>
+
+    <div class="metrics" aria-label="Resultat i urval">
+      <div class="metric"><strong>15+ år</strong><span>B2B och reglerade marknader</span></div>
+      <div class="metric"><strong>1,8 MSEK</strong><span>Signerade konsultintäkter</span></div>
+      <div class="metric"><strong>12+ MSEK</strong><span>Vunna flerårsavtal</span></div>
+      <div class="metric"><strong>94 %</strong><span>Kundretention</span></div>
     </div>
+
+    <h2>Uppdragsfokus</h2>
+    <p class="focus">
+      <strong>Kommersiell tillväxt:</strong> go-to-market, enterprise sales och pipelineutveckling.
+      <strong>Strategiska partnerskap:</strong> nordiskt marknadsinträde, kanalstrategi och executive relations.
+      <strong>Reglerade marknader:</strong> positionering och beslutsstöd för cyber-, fintech-, regtech- och andra high-trust-verksamheter.
+    </p>
 
     <h2>Arbetslivserfarenhet</h2>
 
-    <div class="exp-entry">
-      <div class="exp-header">
-        <span class="exp-role">Grundare & VD</span>
-        <span class="exp-dates">Jun 2022 &ndash; pågående</span>
+    <article class="entry">
+      <div class="entry-head">
+        <span class="role">Grundare & VD</span>
+        <span class="dates">Jun 2022 - pågående</span>
       </div>
-      <div class="exp-company">Avertum Group AB, Göteborg</div>
-      <ul class="cv-bullets">
-        <li>Byggt och driver Avertum Group AB med fokus på affärsutveckling, rådgivning och riskrelaterade tjänster för styrelser, investerare och reglerade verksamheter.</li>
-        <li>Genererade 1,8 MSEK i signerade konsultintäkter inom 24 månader genom riktad outbound-försäljning och expansion mot finans, infrastruktur och industri.</li>
-        <li>Utformade och levererade rådgivningsupplägg inom fraud exposure, cyberrelaterad risk, styrning och incidentberedskap i flera kundmandat.</li>
-        <li>Drivit hela kundresan från prospektering och kvalificering till förhandling, stängning och hantering av intressenter på ledningsnivå.</li>
-      </ul>
-    </div>
+      <div class="company">Avertum Group AB, Göteborg</div>
 
-    <div class="exp-entry">
-      <div class="exp-header">
-        <span class="exp-role">Frilanskonsult – Affärsstrategi & Kommersiell rådgivning</span>
-        <span class="exp-dates">Okt 2020 &ndash; Jun 2022</span>
-      </div>
-      <div class="exp-company">Egenföretagare, Sverige</div>
-      <ul class="cv-bullets">
-        <li>Rådgav sex SME-kunder inom fintech och reglerade tjänster kring prisstrategi, compliance readiness, kommersiell positionering och kundanskaffning.</li>
-        <li>Strukturerade en regulatorisk och operativ roadmap för en betalningsnära aktör, vilket möjliggjorde godkänd revision och 18 % marginalförbättring inom nio månader.</li>
+      <div class="subhead">Bolagsbyggande</div>
+      <ul>
+        <li>Utvecklar Avertums kommersiella modell och AI-assisterade koncept för beslutsstöd inom finansiell brottslighet, leverantörsrisk och reglerade miljöer.</li>
+        <li>Bygger investerarunderlag, partnerstrategi och marknadsinträde med inriktning mot Norden, Europa och GCC.</li>
       </ul>
-    </div>
 
-    <div class="exp-entry">
-      <div class="exp-header">
-        <span class="exp-role">Key Account Manager & Affärsutvecklare – Kritisk infrastruktur</span>
-        <span class="exp-dates">Jan 2018 &ndash; Okt 2020</span>
-      </div>
-      <div class="exp-company">Göteborg Energi, Göteborg</div>
-      <ul class="cv-bullets">
-        <li>Vann Liseberg och Weland AB genom strategisk prospektering och komplexa flerpartsförhandlingar, vilket säkrade flerårsavtal värda över 12 MSEK totalt.</li>
-        <li>Förvaltade strategiska industri- och fastighetsportföljer med avtalsvärden om 5–20 MSEK med ansvar för tillväxt, retention, lönsamhet och riskfördelning.</li>
+      <div class="subhead">Utvalda kundmandat</div>
+      <ul>
+        <li>Genererade 1,8 MSEK i signerade konsultintäkter inom 24 månader genom egen prospektering och grundarledd affärsutveckling.</li>
+        <li>Drev hela kundresan från kvalificering och positionering till förhandling, avslut och ledningsnära intressenthantering.</li>
       </ul>
-    </div>
+    </article>
 
-    <div class="exp-entry">
-      <div class="exp-header">
-        <span class="exp-role">Nordic Sales Executive</span>
-        <span class="exp-dates">Nov 2016 &ndash; Okt 2018</span>
+    <article class="entry">
+      <div class="entry-head">
+        <span class="role">Frilanskonsult - Affärsstrategi & kommersiell rådgivning</span>
+        <span class="dates">Okt 2020 - Jun 2022</span>
       </div>
-      <div class="exp-company">United Cash Back, Göteborg</div>
-      <ul class="cv-bullets">
-        <li>Expanderade VAT recovery-tjänster över fyra nordiska marknader, förbättrade gränsöverskridande compliance-flöden och reducerade handläggningstiden med 22 %.</li>
-        <li>Bidrog till kommersiell expansion genom outbound-försäljning, account development och relationsbyggande i nordiska B2B-miljöer.</li>
+      <div class="company">Egenföretagare, Sverige</div>
+      <ul>
+        <li>Rådgav sex SME-kunder inom fintech och reglerade tjänster kring prisstrategi, compliance readiness, positionering och kundanskaffning.</li>
+        <li>Strukturerade en regulatorisk och operativ färdplan som bidrog till godkänd revision och 18 % marginalförbättring inom nio månader.</li>
       </ul>
-    </div>
+    </article>
 
-    <div class="exp-entry">
-      <div class="exp-header">
-        <span class="exp-role">Investment Consultant (HNWI)</span>
-        <span class="exp-dates">Dec 2014 &ndash; Nov 2016</span>
+    <article class="entry">
+      <div class="entry-head">
+        <span class="role">Key Account Manager & affärsutvecklare - Kritisk infrastruktur</span>
+        <span class="dates">Höst 2018 - Okt 2020</span>
       </div>
-      <div class="exp-company">Fisher Investments Europe, London / Sverige</div>
-      <ul class="cv-bullets">
+      <div class="company">Göteborg Energi, Göteborg</div>
+      <ul>
+        <li>Vann Liseberg och Weland AB genom komplexa flerpartsförhandlingar och säkrade flerårsavtal värda över 12 MSEK totalt.</li>
+        <li>Förvaltade strategiska industri- och fastighetsportföljer med ansvar för tillväxt, retention, lönsamhet och riskfördelning.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="sheet">
+    <div class="page-two-title">Leonardo Celija · CV · Sida 2 av 2</div>
+
+    <h2>Arbetslivserfarenhet, fortsättning</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <span class="role">Nordic Sales Executive</span>
+        <span class="dates">Nov 2016 - Jun 2018</span>
+      </div>
+      <div class="company">United Cash Back, Göteborg</div>
+      <ul>
+        <li>Bidrog till expansion av VAT recovery-tjänster över fyra nordiska marknader och utvecklade gränsöverskridande compliance- och kundflöden.</li>
+        <li>Reducerade handläggningstiden med 22 % och stödde kommersiell tillväxt genom outbound-försäljning och account development.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <span class="role">Investment Consultant (HNWI)</span>
+        <span class="dates">Dec 2014 - Nov 2016</span>
+      </div>
+      <div class="company">Fisher Investments Europe, London / Sverige</div>
+      <ul>
         <li>Hanterade hela rådgivnings- och säljcykeln för europeiska kunder med hög nettoförmögenhet i en strikt FCA-reglerad miljö.</li>
-        <li>Rankades i topp 15 % av den europeiska säljkåren baserat på konverteringsgrad och AUM-tillväxt, samtidigt som 94 % kundretention upprätthölls.</li>
+        <li>Rankades i topp 15 % av den europeiska säljkåren samtidigt som 94 % kundretention upprätthölls.</li>
       </ul>
-    </div>
+    </article>
 
-    <div class="exp-entry">
-      <div class="exp-header">
-        <span class="exp-role">Licensierad finansiell rådgivare</span>
-        <span class="exp-dates">Sep 2010 &ndash; Dec 2014</span>
+    <article class="entry">
+      <div class="entry-head">
+        <span class="role">Licensierad finansiell rådgivare</span>
+        <span class="dates">Sep 2010 - Dec 2014</span>
       </div>
-      <div class="exp-company">Skandia, Göteborg</div>
-      <ul class="cv-bullets">
-        <li>Uppnådde högsta försäljningsvolym inom riskjusterade fondportföljer för HNWI-segmentet under 2013–2014.</li>
-        <li>Levererade FI-reglerad rådgivning inom pension, försäkring och sparande med starkt fokus på lämplighet, förtroende och långsiktiga kundrelationer.</li>
+      <div class="company">Skandia, Göteborg</div>
+      <ul>
+        <li>Uppnådde högsta försäljningsvolym inom riskjusterade fondportföljer för HNWI-segmentet under 2013-2014.</li>
+        <li>Levererade FI-reglerad rådgivning inom pension, försäkring och sparande med fokus på lämplighet och långsiktiga kundrelationer.</li>
       </ul>
+    </article>
+
+    <h2>Utbildning</h2>
+    <div class="education">
+      <div class="edu">
+        <div class="edu-head">
+          <span class="degree">Cybersäkerhet & skydd av digitala tillgångar</span>
+          <span class="dates">Jan 2026 - Maj 2026</span>
+        </div>
+        <div class="school">XeDrix Institute of Higher Education, Göteborg · Professionell utbildning</div>
+      </div>
+
+      <div class="edu">
+        <div class="edu-head">
+          <span class="degree">Magisterexamen i statsvetenskap och Science & Technology Studies</span>
+          <span class="dates">2001 - 2006</span>
+        </div>
+        <div class="school">Göteborgs universitet, Sverige</div>
+      </div>
     </div>
 
-    <h2>Utbildning & Certifieringar</h2>
-    <div class="edu-entry">
-      <div class="edu-row">
-        <span class="edu-degree">Cybersäkerhet & skydd av digitala tillgångar</span>
-        <span class="edu-dates">Jan 2026 &ndash; Maj 2026</span>
-      </div>
-      <div class="edu-school">XeDrix Institute of Higher Education, Göteborg &ndash; Professionell utbildning</div>
-      <div class="edu-sub">Formell utbildning som kompletterar pågående arbete inom cybersäkerhet, styrning och rådgivning i reglerade miljöer.</div>
-    </div>
-    <div class="edu-entry">
-      <div class="edu-row">
-        <span class="edu-degree">Magisterexamen i statsvetenskap och Science & Technology Studies</span>
-        <span class="edu-dates">2001 &ndash; 2006</span>
-      </div>
-      <div class="edu-school">Göteborgs universitet, Sverige</div>
-    </div>
-
-    <div class="cert-grid">
-      <div class="cert-item"><strong>ISO/IEC 27001 Lead Implementer</strong> &ndash; Självstudier / Aktiv förberedelse</div>
-      <div class="cert-item"><strong>CRISC</strong> &ndash; Pågående</div>
-      <div class="cert-item"><strong>GDPR & DPO Practitioner</strong> &ndash; ISACA / IAPP-inriktad</div>
-      <div class="cert-item"><strong>NIS2 & DORA Frameworks</strong> &ndash; Avancerad professionell utbildning</div>
+    <h2>Professionell utveckling</h2>
+    <div class="development">
+      <div><strong>ISO/IEC 27001 Lead Implementer</strong> - aktiv förberedelse</div>
+      <div><strong>CRISC</strong> - pågående studier</div>
+      <div><strong>GDPR & DPO Practitioner</strong> - professionell vidareutbildning</div>
+      <div><strong>NIS2 & DORA</strong> - avancerad professionell utbildning</div>
     </div>
 
     <h2>Kärnkompetenser</h2>
-    <div class="skills-block">
-      <span class="skill-tag">Affärsutveckling</span>
-      <span class="skill-tag">Högvärdig B2B-försäljning</span>
-      <span class="skill-tag">Strategiska partnerskap</span>
-      <span class="skill-tag">Komplexa förhandlingar</span>
-      <span class="skill-tag">Key Account Management</span>
-      <span class="skill-tag">Financial Crime & Fraud Risk</span>
-      <span class="skill-tag">Cybersäkerhet & Riskrådgivning</span>
-      <span class="skill-tag">NIS2 / DORA / GDPR</span>
-      <span class="skill-tag">Styrelse- & Ledningsrådgivning</span>
-      <span class="skill-tag">Reglerade marknader</span>
-      <span class="skill-tag">Incidentberedskap</span>
-      <span class="skill-tag">Svenska (Modersmål) / Engelska (Flytande)</span>
+    <div class="skills">
+      <span class="skill">Affärsutveckling</span>
+      <span class="skill">Enterprise Sales</span>
+      <span class="skill">Strategiska partnerskap</span>
+      <span class="skill">Go-to-Market</span>
+      <span class="skill">Nordiskt marknadsinträde</span>
+      <span class="skill">Komplexa förhandlingar</span>
+      <span class="skill">Executive Stakeholder Management</span>
+      <span class="skill">Reglerade marknader</span>
+      <span class="skill">Finansiell brottslighet & fraud risk</span>
+      <span class="skill">Cyberrisk & GRC</span>
+      <span class="skill">NIS2 / DORA / GDPR</span>
+      <span class="skill">Styrelse- & ledningsrådgivning</span>
+      <span class="skill">Svenska - modersmål</span>
+      <span class="skill">Engelska - flytande</span>
     </div>
-  </div>
+  </section>
 </body>
 </html>
