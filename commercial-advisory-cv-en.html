@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leonardo Celija — Commercial Advisor and Strategic Business Developer.">
+  <title>Leonardo Celija | Commercial Advisor</title>
+
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --accent: #0f766e;
+      --accent-soft: #e8f5f3;
+      --paper: #ffffff;
+      --canvas: #edf1f5;
+      --line: #dce3ea;
+      --heading: #0f172a;
+      --radius: 14px;
+      --shadow: 0 18px 55px rgba(15, 23, 42, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-color: rgba(15, 118, 110, 0.45);
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
+
+    .resume {
+      width: min(1080px, calc(100% - 32px));
+      margin: 40px auto;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid rgba(220, 227, 234, 0.85);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      position: relative;
+      padding: 56px 64px 48px;
+      overflow: hidden;
+      background: var(--heading);
+      color: #ffffff;
+    }
+
+    .hero::after {
+      position: absolute;
+      right: -90px;
+      bottom: -140px;
+      width: 360px;
+      height: 360px;
+      content: "";
+      border: 60px solid rgba(45, 212, 191, 0.10);
+      border-radius: 50%;
+    }
+
+    .eyebrow,
+    .section-label {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero .eyebrow {
+      color: #5eead4;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 4.8rem);
+      font-weight: 800;
+      letter-spacing: -0.055em;
+      line-height: 0.98;
+    }
+
+    .headline {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 18px 0 8px;
+      color: #d9e4ef;
+      font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .availability {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: #9fb0c3;
+    }
+
+    .contact-list {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin: 28px 0 0;
+      padding: 22px 0 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      list-style: none;
+    }
+
+    .contact-list a,
+    .contact-list span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #d9e4ef;
+      text-decoration: none;
+    }
+
+    .contact-list a:hover {
+      color: #5eead4;
+    }
+
+    .contact-list svg {
+      width: 16px;
+      height: 16px;
+      color: #5eead4;
+      flex: 0 0 auto;
+    }
+
+    .content {
+      padding: 48px 64px 58px;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .profile-copy {
+      margin: 0;
+      color: #344155;
+      font-size: 1.04rem;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      min-height: 126px;
+      padding: 18px;
+      background: var(--accent-soft);
+      border: 1px solid #cce9e5;
+      border-radius: var(--radius);
+    }
+
+    .metric-value {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--accent);
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+      white-space: nowrap;
+    }
+
+    .metric-label {
+      display: block;
+      color: #40515f;
+      font-size: 0.82rem;
+      font-weight: 650;
+      line-height: 1.35;
+      hyphens: none;
+      overflow-wrap: normal;
+    }
+
+    .focus {
+      margin-top: 30px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tag-list li {
+      padding: 7px 11px;
+      color: #304253;
+      font-size: 0.8rem;
+      font-weight: 650;
+      background: #f4f7f9;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(240px, 0.82fr);
+      gap: 52px;
+      margin-top: 54px;
+      padding-top: 44px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 28px;
+      color: var(--heading);
+      font-size: 1.35rem;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+    }
+
+    .experience-list {
+      position: relative;
+    }
+
+    .experience-list::before {
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 6px;
+      width: 1px;
+      content: "";
+      background: var(--line);
+    }
+
+    .role {
+      position: relative;
+      padding: 0 0 34px 32px;
+      break-inside: avoid;
+    }
+
+    .role:last-child {
+      padding-bottom: 0;
+    }
+
+    .role::before {
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 11px;
+      height: 11px;
+      content: "";
+      background: var(--paper);
+      border: 3px solid var(--accent);
+      border-radius: 50%;
+    }
+
+    .role-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px 20px;
+      align-items: baseline;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin: 0;
+      color: var(--heading);
+      font-size: 0.96rem;
+      font-weight: 800;
+      letter-spacing: 0.015em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .company {
+      margin: 4px 0 0;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+
+    .dates {
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .role ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .role li {
+      margin: 5px 0;
+      padding-left: 3px;
+      color: #425063;
+    }
+
+    .role li::marker {
+      color: var(--accent);
+    }
+
+    .sidebar {
+      padding-left: 30px;
+      border-left: 1px solid var(--line);
+    }
+
+    .sidebar-section {
+      margin-bottom: 38px;
+      break-inside: avoid;
+    }
+
+    .sidebar-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .credential {
+      margin-bottom: 24px;
+    }
+
+    .credential:last-child {
+      margin-bottom: 0;
+    }
+
+    .credential h3 {
+      margin-bottom: 5px;
+      font-size: 0.86rem;
+      text-transform: none;
+    }
+
+    .credential p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.55;
+    }
+
+    .languages {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+    }
+
+    .language {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .language:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .language dt {
+      color: var(--heading);
+      font-weight: 750;
+    }
+
+    .language dd {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .print-note {
+      margin: 32px 0 0;
+      color: #8290a2;
+      font-size: 0.72rem;
+    }
+
+    @media (max-width: 800px) {
+      .resume {
+        width: min(100% - 20px, 700px);
+        margin: 10px auto;
+        border-radius: 14px;
+      }
+
+      .hero,
+      .content {
+        padding: 38px 28px;
+      }
+
+      .profile,
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .profile,
+      .layout {
+        gap: 36px;
+      }
+
+      .sidebar {
+        padding: 38px 0 0;
+        border-top: 1px solid var(--line);
+        border-left: 0;
+      }
+    }
+
+    @media (max-width: 520px) {
+      body {
+        font-size: 14px;
+      }
+
+      .hero,
+      .content {
+        padding-right: 22px;
+        padding-left: 22px;
+      }
+
+      .contact-list {
+        display: grid;
+      }
+
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .metric {
+        min-height: 0;
+      }
+
+      .role-header {
+        grid-template-columns: 1fr;
+        gap: 3px;
+      }
+
+      .dates {
+        white-space: normal;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 7mm;
+      }
+
+      body {
+        background: #ffffff;
+        font-size: 9pt;
+        line-height: 1.35;
+      }
+
+      .resume {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .hero {
+        padding: 8mm 10mm 7mm;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      h1 {
+        font-size: 30pt;
+      }
+
+      .headline {
+        margin-top: 7px;
+        font-size: 11.5pt;
+      }
+
+      .contact-list {
+        margin-top: 10px;
+        padding-top: 9px;
+      }
+
+      .content {
+        padding: 7mm 10mm 6mm;
+      }
+
+      .profile {
+        display: block;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-top: 5mm;
+      }
+
+      .metric {
+        min-height: 0;
+        padding: 8px;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .metric-value {
+        font-size: 13pt;
+      }
+
+      .metric-label {
+        font-size: 7.4pt;
+      }
+
+      .eyebrow,
+      .section-label {
+        letter-spacing: 0.035em;
+      }
+
+      .focus {
+        margin-top: 12px;
+        padding-top: 10px;
+      }
+
+      .layout {
+        display: block;
+        margin-top: 20px;
+        padding-top: 17px;
+      }
+
+      h2 {
+        margin-bottom: 14px;
+        font-size: 13pt;
+      }
+
+      h3 {
+        font-size: 8.2pt;
+      }
+
+      .role {
+        padding-bottom: 15px;
+      }
+
+      .role li {
+        margin: 2px 0;
+      }
+
+      .sidebar {
+        display: grid;
+        grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+        gap: 8mm;
+        margin-top: 5mm;
+        padding: 4mm 0 0;
+        border-top: 1px solid var(--line);
+        border-left: 0;
+        break-inside: avoid;
+      }
+
+      .sidebar-section {
+        margin-bottom: 0;
+      }
+
+      .credential {
+        margin-bottom: 16px;
+      }
+
+      .print-note {
+        display: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="resume">
+    <header class="hero">
+      <p class="eyebrow">Curriculum Vitae</p>
+      <h1>Leonardo Celija</h1>
+      <p class="headline">Commercial Advisor &amp; Strategic Business Developer</p>
+      <p class="availability">Gothenburg, Sweden · Open to Nordic &amp; International Advisory Mandates</p>
+
+      <ul class="contact-list" aria-label="Contact details">
+        <li>
+          <a href="tel:+46737846011">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.08 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.84.56 2.8.69A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            +46 73 784 60 11
+          </a>
+        </li>
+        <li>
+          <a href="mailto:leo@avertum.se">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/><path d="m22 6-10 7L2 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            leo@avertum.se
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/leocelija" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2V9ZM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            linkedin.com/in/leocelija
+          </a>
+        </li>
+        <li>
+          <a href="https://avertum.se" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            avertum.se
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="content">
+      <section class="profile" aria-labelledby="profile-heading">
+        <div>
+          <p class="section-label">Professional profile</p>
+          <h2 id="profile-heading">Commercial execution for complex B2B markets</h2>
+          <p class="profile-copy">
+            Commercial operator with 15+ years of experience originating pipeline, structuring complex deals,
+            and driving revenue in regulated B2B sectors and critical infrastructure. Delivered SEK 12M+ in
+            single multi-year enterprise contracts and originated SEK 1.8M in advisory mandates within 24 months.
+            Advises growth-stage companies and established enterprises on Go-to-Market execution, enterprise
+            negotiations, and commercial risk allocation.
+          </p>
+        </div>
+
+        <div class="metrics" aria-label="Core metrics">
+          <div class="metric">
+            <span class="metric-value">15+ years</span>
+            <span class="metric-label">B2B commercial execution</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">SEK 12M+</span>
+            <span class="metric-label">Largest multi&#8209;year contract won</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">SEK 1.8M</span>
+            <span class="metric-label">Self-originated advisory revenue in 24 months</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">94%</span>
+            <span class="metric-label">Client retention at Fisher Investments, 2014–16</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus" aria-labelledby="focus-heading">
+        <p class="section-label" id="focus-heading">Focus areas</p>
+        <ul class="tag-list">
+          <li>Enterprise Sales</li>
+          <li>Go-to-Market Strategy</li>
+          <li>Complex Deal Structuring</li>
+          <li>B2B Pricing</li>
+          <li>Regulated Market Entry</li>
+          <li>Partner Channels</li>
+        </ul>
+      </section>
+
+      <div class="layout">
+        <section aria-labelledby="experience-heading">
+          <p class="section-label">Career</p>
+          <h2 id="experience-heading">Professional experience</h2>
+
+          <div class="experience-list">
+            <article class="role">
+              <div class="role-header">
+                <div>
+                  <h3>Principal Commercial Advisor &amp; Founder</h3>
+                  <p class="company">Avertum Group AB · Gothenburg, Sweden</p>
+                </div>
+                <time class="dates">Jun 2022 – Present</time>
+              </div>
+              <ul>
+                <li>Originated and closed SEK 1.8M in signed commercial advisory mandates within 24 months through direct founder-led sales.</li>
+                <li>Advised B2B clients on commercial positioning, buyer qualification, and contract negotiation for high-trust products.</li>
+                <li>Built channel partnerships with external legal, forensic, and compliance specialists across the Nordics.</li>
+              </ul>
+            </article>
+
+            <article class="role">
+              <div class="role-header">
+                <div>
+                  <h3>Independent Commercial Strategy Consultant</h3>
+                  <p class="company">Self-Employed · Sweden</p>
+                </div>
+                <time class="dates">Oct 2020 – Jun 2022</time>
+              </div>
+              <ul>
+                <li>Advised six SME clients in fintech and regulated services on pricing strategy, sales workflows, and commercial positioning.</li>
+                <li>Restructured commercial operations and compliance alignment for a growth-stage client, driving an 18% margin improvement in 9 months.</li>
+              </ul>
+            </article>
+
+            <article class="role">
+              <div class="role-header">
+                <div>
+                  <h3>Key Account Manager &amp; Business Developer</h3>
+                  <p class="company">Göteborg Energi · Gothenburg, Sweden · Critical Infrastructure</p>
+                </div>
+                <time class="dates">Aug 2018 – Oct 2020</time>
+              </div>
+              <ul>
+                <li>Originated and closed SEK 12M+ in multi-year enterprise contracts with Liseberg and Weland AB — the segment's largest contract won that fiscal year.</li>
+                <li>Managed strategic industrial and real-estate accounts with full revenue, margin, and risk allocation responsibility.</li>
+                <li>Led cross-functional negotiations involving engineering, operations, and corporate legal teams.</li>
+              </ul>
+            </article>
+
+            <article class="role">
+              <div class="role-header">
+                <div>
+                  <h3>Nordic Sales Executive</h3>
+                  <p class="company">United Cash Back · Gothenburg, Sweden</p>
+                </div>
+                <time class="dates">Nov 2016 – Jun 2018</time>
+              </div>
+              <ul>
+                <li>Expanded cross-border VAT recovery services across four Nordic markets through targeted outbound sales.</li>
+                <li>Reduced client onboarding processing time by 22% through standardized cross-border workflows.</li>
+              </ul>
+            </article>
+
+            <article class="role">
+              <div class="role-header">
+                <div>
+                  <h3>Investment Consultant (HNWI)</h3>
+                  <p class="company">Fisher Investments Europe · London / Sweden</p>
+                </div>
+                <time class="dates">Dec 2014 – Nov 2016</time>
+              </div>
+              <ul>
+                <li>Managed end-to-end sales cycles for high-net-worth clients in a strictly FCA-regulated environment.</li>
+                <li>Ranked in the top 15% of the European sales organization; maintained a 94% client retention rate over two years.</li>
+              </ul>
+            </article>
+
+            <article class="role">
+              <div class="role-header">
+                <div>
+                  <h3>Licensed Financial Advisor</h3>
+                  <p class="company">Skandia · Gothenburg, Sweden</p>
+                </div>
+                <time class="dates">Sep 2010 – Dec 2014</time>
+              </div>
+              <ul>
+                <li>Achieved highest regional sales volume for risk-adjusted fund portfolios in the HNWI segment (2013–2014).</li>
+                <li>Delivered investment, pension, and insurance advice regulated by the Swedish Financial Supervisory Authority (FI).</li>
+              </ul>
+            </article>
+
+            <article class="role">
+              <div class="role-header">
+                <div>
+                  <h3>Early Career — B2B Sales &amp; Project Coordination</h3>
+                  <p class="company">Commercial Service Sectors · Sweden</p>
+                </div>
+                <time class="dates">2006 – 2010</time>
+              </div>
+              <ul>
+                <li>Account management, client prospecting, and operational project coordination across commercial service sectors following Master's graduation.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <aside class="sidebar" aria-label="Education and languages">
+          <section class="sidebar-section" aria-labelledby="education-heading">
+            <p class="section-label">Background</p>
+            <h2 id="education-heading">Education &amp; credentials</h2>
+
+            <div class="credential">
+              <h3>Master’s Degree in Political Science and Science &amp; Technology Studies (STS)</h3>
+              <p>University of Gothenburg</p>
+              <p>2001 – 2006</p>
+            </div>
+
+            <div class="credential">
+              <h3>Cybersecurity &amp; Protection of Digital Assets</h3>
+              <p>XeDrix Institute of Higher Education</p>
+              <p>Vocational Programme · Jan–May 2026</p>
+            </div>
+          </section>
+
+          <section class="sidebar-section" aria-labelledby="languages-heading">
+            <p class="section-label">Communication</p>
+            <h2 id="languages-heading">Languages</h2>
+            <dl class="languages">
+              <div class="language">
+                <dt>Swedish</dt>
+                <dd>Native</dd>
+              </div>
+              <div class="language">
+                <dt>English</dt>
+                <dd>Fluent</dd>
+              </div>
+            </dl>
+          </section>
+
+          <p class="print-note">This page is optimized for both screen and A4 printing.</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
