@@ -84,7 +84,7 @@
       color: var(--accent);
       font-size: 0.76rem;
       font-weight: 800;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
     }
 
@@ -191,6 +191,7 @@
       font-weight: 800;
       letter-spacing: -0.035em;
       line-height: 1.15;
+      white-space: nowrap;
     }
 
     .metric-label {
@@ -199,6 +200,8 @@
       font-size: 0.82rem;
       font-weight: 650;
       line-height: 1.35;
+      hyphens: none;
+      overflow-wrap: normal;
     }
 
     .focus {
@@ -504,8 +507,12 @@
       }
 
       .profile {
-        grid-template-columns: 1.5fr 1fr;
-        gap: 7mm;
+        display: block;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-top: 5mm;
       }
 
       .metric {
@@ -519,14 +526,22 @@
         font-size: 13pt;
       }
 
+      .metric-label {
+        font-size: 7.4pt;
+      }
+
+      .eyebrow,
+      .section-label {
+        letter-spacing: 0.035em;
+      }
+
       .focus {
         margin-top: 12px;
         padding-top: 10px;
       }
 
       .layout {
-        grid-template-columns: minmax(0, 2fr) minmax(0, 0.82fr);
-        gap: 7mm;
+        display: block;
         margin-top: 20px;
         padding-top: 17px;
       }
@@ -549,14 +564,18 @@
       }
 
       .sidebar {
-        padding-top: 0;
-        padding-left: 5mm;
-        border-top: 0;
-        border-left: 1px solid var(--line);
+        display: grid;
+        grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+        gap: 8mm;
+        margin-top: 5mm;
+        padding: 4mm 0 0;
+        border-top: 1px solid var(--line);
+        border-left: 0;
+        break-inside: avoid;
       }
 
       .sidebar-section {
-        margin-bottom: 25px;
+        margin-bottom: 0;
       }
 
       .credential {
@@ -631,7 +650,7 @@
           </div>
           <div class="metric">
             <span class="metric-value">SEK 12M+</span>
-            <span class="metric-label">Largest multi-year contract won</span>
+            <span class="metric-label">Largest multi&#8209;year contract won</span>
           </div>
           <div class="metric">
             <span class="metric-value">SEK 1.8M</span>
